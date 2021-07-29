@@ -1,0 +1,92 @@
+$green-1: #f1f8e9;
+$green-2: #dcedc8;
+$green-3: #c5e1a5;
+$green-4: #aed581;
+$green-5: #9ccc65;
+$green-6: #7cb342;
+$green-7: #689f38;
+$green-8: #558b2f;
+$green-9: #33691e;
+$lime-1: #f9fbe7;
+$lime-2: #f0f4c3;
+$lime-3: #e6ee9c;
+$lime-4: #dce775;
+$lime-5: #d4e157;
+$lime-6: #c0ca33;
+$lime-7: #afb42b;
+$lime-8: #9e9d24;
+$lime-9: #827717;
+$brown-1: #efebe9;
+$brown-2: #d7ccc8;
+$brown-3: #bcaaa4;
+$brown-4: #a1887f;
+$brown-5: #8d6e63;
+$brown-6: #6d4c41;
+$brown-7: #5d4037;
+$brown-8: #4e342e;
+$brown-9: #3e2723;
+$grey-1: #fafafa;
+$grey-2: #f5f5f5;
+$grey-3: #eeeeee;
+$grey-4: #e0e0e0;
+$grey-5: #bdbdbd;
+$grey-6: #757575;
+$grey-7: #616161;
+$grey-8: #424242;
+$grey-9: #212121;
+
+$white: #ffffff;
+$black: #000000;
+
+$colors: (
+  'green-1': $green-1,
+  'green-2': $green-2,
+  'green-3': $green-3,
+  'green-4': $green-4,
+  'green-5': $green-5,
+  'green-6': $green-6,
+  'green-7': $green-7,
+  'green-8': $green-8,
+  'green-9': $green-9,
+  'lime-1': $lime-1,
+  'lime-2': $lime-2,
+  'lime-3': $lime-3,
+  'lime-4': $lime-4,
+  'lime-5': $lime-5,
+  'lime-6': $lime-6,
+  'lime-7': $lime-7,
+  'lime-8': $lime-8,
+  'lime-9': $lime-9,
+  'brown-1': $brown-1,
+  'brown-2': $brown-2,
+  'brown-3': $brown-3,
+  'brown-4': $brown-4,
+  'brown-5': $brown-5,
+  'brown-6': $brown-6,
+  'brown-7': $brown-7,
+  'brown-8': $brown-8,
+  'brown-9': $brown-9,
+  'grey-1': $grey-1,
+  'grey-2': $grey-2,
+  'grey-3': $grey-3,
+  'grey-4': $grey-4,
+  'grey-5': $grey-5,
+  'grey-6': $grey-6,
+  'grey-7': $grey-7,
+  'grey-8': $grey-8,
+  'grey-9': $grey-9,
+  'white': $white,
+  'black': $black,
+);
+
+@each $name, $value in $colors {
+  .#{$name} {
+    color: $value;
+  }
+  .bg-#{$name} {
+    background-color: $value;
+  }
+  .hover-#{name}:hover {
+    background-color: $value;
+  }
+}

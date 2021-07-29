@@ -1,7 +1,5 @@
 <template>
-  <div class="">
-    <apartmani-pocetna />
-  </div>
+  <div></div>
 </template>
 
 <script>

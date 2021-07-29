@@ -1,45 +1,72 @@
 <template>
   <div class="header">
-    <div class="logo"></div>
-    <div class="title">Title</div>
+    <div class="title">
+      <div class="logo">
+        <img style="width: 50px" src="@/assets/images/footer-logo.png" alt="" />
+      </div>
+      Turistička agencija "Strom"
+    </div>
     <div class="navigation">
-      <a href="#">Home</a>| <a href="#">About</a>|
-      <a href="#">Contact</a>
+      <NuxtLink to="/">Početna</NuxtLink>
+
+      <NuxtLink to="/apartmani">Apartmani</NuxtLink>
+      <NuxtLink to="/izleti">Izleti</NuxtLink>
+      <NuxtLink to="/kontakt">Kontakt</NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      show: false,
+    }
+  },
+  methods: {},
+}
 </script>
 
 <style lang="scss" scoped>
 .header {
   display: flex;
-  justify-content: space-between;
-  font-size: 22px;
-  background: forestgreen;
+  justify-content: space-evenly;
+  background-color: green;
   color: white;
-  padding: 0 50px;
+  font-size: 22px;
+  padding: 0 40px;
+  padding-right: 0px;
+  min-height: 100px;
   div {
     display: flex;
-    padding: 10px;
   }
 }
 .logo {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 22px;
+  margin: 10px;
 }
 .title {
   font-size: 24px;
   font-weight: 600;
+  align-items: center;
+  padding: 10px;
 }
 .navigation {
+  min-width: 300px;
+  align-items: center;
+  padding: 10px;
+
   a {
-    cursor: pointer;
-    padding: 0 10px;
+    color: white;
+    margin: 20px;
+    border-bottom: 2px solid transparent;
+    padding: 5px;
     text-decoration: none;
-  }
-  a:visited {
-    color: snow;
+    &:hover {
+      border-bottom: 2px solid white;
+    }
   }
 }
 </style>

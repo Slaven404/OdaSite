@@ -1,6 +1,8 @@
 <template>
   <div class="slaven-container">
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
