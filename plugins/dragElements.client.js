@@ -36,6 +36,7 @@ Vue.directive('drag-me', {
       ele.style.removeProperty('user-select')
       ele.removeEventListener('mousemove', mouseMoveHandler)
     }
+
     ele.addEventListener('mousedown', mouseDownHandler)
     ele.addEventListener('mouseup', mouseUpHandler)
     ele.addEventListener('mouseout', mouseOutHandler)

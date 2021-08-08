@@ -10,7 +10,7 @@
         </div>
         <div class="image-content">
           <div class="image-control">
-            <div>
+            <div class="relative">
               <div class="left">L</div>
               <img src="@/assets/images/apartman1.jpg" alt="" />
               <div class="right">L</div>
@@ -39,7 +39,7 @@
         </div>
         <div class="image-content">
           <div class="image-control">
-            <div>
+            <div class="relative">
               <div class="left">L</div>
               <img src="@/assets/images/apartman1.jpg" alt="" />
               <div class="right">L</div>
@@ -91,13 +91,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-// .section {
-//   font-size: 18px;
-//   letter-spacing: 2px;
-//   color: orange;
-//   font-weight: 500;
-//   padding: 10px 50px;
-// }
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -122,8 +116,31 @@ export default {
   align-items: center;
   border-radius: 50px;
   flex-direction: column;
+  .relative {
+    position: relative;
+
+    &:hover {
+      .left,
+      .right {
+        animation-name: bgBlur;
+        animation-timing-function: ease-out;
+        animation-duration: 0.5s;
+        backdrop-filter: blur(5px);
+        color: white;
+      }
+    }
+  }
+  @keyframes bgBlur {
+    from {
+      backdrop-filter: blur(0px);
+    }
+    to {
+      backdrop-filter: blur(5px);
+    }
+  }
 
   img {
+    border-radius: 10px;
     width: 450px;
     height: 350px;
   }
@@ -133,15 +150,21 @@ export default {
     padding: 0 10px;
   }
 }
-.left {
-  background: wheat;
+.left,
+.right {
+  background: transparent;
   height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.left {
   border-radius: 10px 0 0 10px;
 }
 .right {
-  background: wheat;
-  height: 100%;
+  right: 0;
+
   border-radius: 0 10px 10px 0;
+  margin-right: 10px;
 }
 .description {
   width: 100%;

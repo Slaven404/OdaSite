@@ -24,16 +24,23 @@ export default {}
 
 <style lang="scss" scoped>
 .images {
-  max-width: 975px;
+  max-width: 970px;
   margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   cursor: grab;
   overflow: hidden;
+  overflow-x: scroll;
   img {
     margin: 3px;
     pointer-events: none;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .drag-box {

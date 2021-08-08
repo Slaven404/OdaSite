@@ -63,6 +63,27 @@ export default {
   color: white;
   position: relative;
   z-index: 2;
+  &:hover {
+    .left,
+    .right,
+    .intro-content,
+    .intro-title,
+    .intro-adress {
+      animation-name: bgBlur;
+      animation-timing-function: ease-in-out;
+      animation-duration: 0.33s;
+      backdrop-filter: blur(5px);
+      color: white;
+    }
+  }
+}
+@keyframes bgBlur {
+  from {
+    backdrop-filter: blur(0px);
+  }
+  to {
+    backdrop-filter: blur(5px);
+  }
 }
 .bg-image {
   top: 0;
@@ -116,7 +137,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 100px;
+  min-width: 80px;
   cursor: pointer;
 }
 </style>

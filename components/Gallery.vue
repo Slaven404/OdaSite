@@ -32,6 +32,14 @@ export default {}
     width: 100%;
     max-height: 180px;
     object-fit: cover;
+    transition: 0.33s ease-in;
+    &:hover {
+      transform: scale3d(1.125, 1.125, 1.125);
+      -webkit-transform: scale3d(1.125, 1.125, 1.125);
+      -moz-transform: scale3d(1.125, 1.125, 1.125);
+      -o-transform: scale3d(1.125, 1.125, 1.125);
+      -ms-transform: scale3d(1.125, 1.125, 1.125);
+    }
   }
 }
 .main {
