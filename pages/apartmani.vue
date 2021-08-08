@@ -1,9 +1,25 @@
 <template>
-  <div></div>
+  <div class="container">
+    <div>
+      <div class="section">Izdavanje apartaman</div>
+      <div class="title">Apartmani "Strom"</div>
+      <div class="description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </div>
+      <gallery />
+    </div>
+    <apartmani-lokacija />
+  </div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.container {
+}
+</style>

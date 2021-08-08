@@ -1,6 +1,10 @@
 <template>
   <div class="">
+    <intro />
     <apartmani-pocetna />
+    <apartmani-lokacija />
+    <izlet />
+    <izlet :right="true" />
   </div>
 </template>
 
@@ -8,4 +12,4 @@
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

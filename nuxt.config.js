@@ -20,7 +20,7 @@ export default {
     scss: ['@/assets/partial/*.scss'],
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/imports.client.js', '~/plugins/dragElements.client.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

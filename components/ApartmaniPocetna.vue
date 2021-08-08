@@ -8,10 +8,12 @@
       1500s, when an unknown printer took a galley of type and scrambled it to
       make a type specimen book.
     </div>
-    <div class="images">
-      <img style="width: 350px" src="@/assets/images/apartman1.jpg" alt="" />
-      <img style="width: 350px" src="@/assets/images/apartman1.jpg" alt="" />
-      <img style="width: 350px" src="@/assets/images/apartman1.jpg" alt="" />
+    <div v-drag-me class="images">
+      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
+      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
+      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
+      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
+      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
     </div>
   </div>
 </template>
@@ -21,34 +23,38 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.container {
-  margin: auto;
-  max-width: 1080px;
-}
-.section {
-  margin: 20px 5px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  color: orange;
-}
-.title {
-  margin: 20px 5px;
-  color: black;
-  font-size: 24px;
-  font-weight: 600;
-}
-.description {
-  margin: 20px 5px;
-
-  max-width: 1083px;
-}
-
 .images {
+  max-width: 975px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  cursor: grab;
+  overflow: hidden;
   img {
     margin: 3px;
+    pointer-events: none;
   }
+}
+.drag-box {
+  margin: auto;
+}
+.images::-webkit-scrollbar {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  height: 5px;
+  width: 5px;
+  scrollbar-width: thin;
+}
+.images::-webkit-scrollbar-track {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+.images::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 18, 18);
+
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 </style>
