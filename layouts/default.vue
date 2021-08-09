@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
 }
@@ -48,11 +48,17 @@ body {
 .description {
   padding: 20px 50px;
   text-align: justify;
+  @media (max-width: 920px) {
+    padding: 20px;
+  }
 }
 .title {
   color: black;
   font-size: 24px;
   font-weight: 600;
   padding: 20px 50px;
+  @media (max-width: 660px) {
+    padding: 20px;
+  }
 }
 </style>

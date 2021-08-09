@@ -1,7 +1,7 @@
 <template>
   <div class="location-container">
     <div class="location">
-      <div class="section">Lokacija apartmana</div>
+      <div style="width: 200%" class="section">Lokacija apartmana</div>
       <div class="description">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -50,13 +50,17 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss">
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   width: 400px;
   height: 400px;
   border-radius: 10px;
+  @media (max-width: 820px) {
+    width: 300px;
+    height: 300px;
+  }
 }
 .mapouter {
   position: relative;
@@ -64,6 +68,10 @@ export default {}
   width: 400px;
   height: 400px;
   border-radius: 10px;
+  @media (max-width: 820px) {
+    width: 300px;
+    height: 300px;
+  }
 }
 </style>
 <style lang="scss" scoped>
@@ -71,6 +79,12 @@ export default {}
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 660px) {
+    flex-direction: column;
+    .location {
+      width: 100%;
+    }
+  }
 }
 .location {
   width: 50%;
@@ -97,6 +111,13 @@ export default {}
     width: 50px;
     height: 50px;
     margin-right: 50px;
+    @media (max-width: 920px) {
+      margin-right: 20px;
+    }
+    @media (max-width: 820px) {
+      width: 40px;
+      height: 40px;
+    }
   }
   div {
     display: flex;
@@ -107,6 +128,12 @@ export default {}
     background-color: white;
     border-radius: 5px;
     min-width: 250px;
+    @media (max-width: 920px) {
+      padding: 10px 5px;
+    }
+    @media (max-width: 820px) {
+      min-width: 200px;
+    }
   }
 }
 .map {
@@ -115,5 +142,10 @@ export default {}
   width: 400px;
   height: 400px;
   margin: 50px;
+  @media (max-width: 820px) {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
 }
 </style>

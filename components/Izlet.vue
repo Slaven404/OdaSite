@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="description">
-        <div>
+        <div class="decription-content">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -70,8 +70,29 @@ export default {
 <style lang="scss" scoped>
 .grid-col-2-1 {
   grid-template-columns: 2fr 1fr !important;
+  .image-container {
+    order: 2;
+  }
+  .description {
+    order: 1;
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: 1fr !important;
+    .image-container {
+      order: 1;
+    }
+    .description {
+      order: 2;
+    }
+  }
   .description > div {
     padding: 0 180px 0 50px !important;
+    @media (max-width: 920px) {
+      padding: 0 180px 0 30px !important;
+    }
+    @media (max-width: 660px) {
+      padding: 0 30px !important;
+    }
   }
   .image-container > .image-content > .image-control {
     left: auto;
@@ -86,17 +107,30 @@ export default {
   padding: 0 50px;
   background: whitesmoke;
   margin: 20px auto;
+  @media (max-width: 1100px) {
+    padding: 0 !important;
+  }
 }
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  @media (max-width: 660px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .image-container {
+  order: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 400px;
+  @media (max-width: 920px) {
+    min-height: 350px;
+  }
+  @media (max-width: 820px) {
+    min-height: 325px;
+  }
 }
 .image-content {
   display: flex;
@@ -104,6 +138,12 @@ export default {
   align-items: flex-end;
   position: relative;
   min-height: 400px;
+  @media (max-width: 920px) {
+    min-height: 350px;
+  }
+  @media (max-width: 820px) {
+    min-height: 325px;
+  }
 }
 .image-control {
   position: absolute;
@@ -116,9 +156,23 @@ export default {
   align-items: center;
   border-radius: 50px;
   flex-direction: column;
+
+  @media (max-width: 920px) {
+    width: 400px;
+    height: 300px;
+  }
+  @media (max-width: 820px) {
+    width: 375px;
+    height: 275px;
+  }
+  @media (max-width: 660px) {
+    width: 100%;
+  }
   .relative {
     position: relative;
-
+    @media (max-width: 660px) {
+      width: 100%;
+    }
     &:hover {
       .left,
       .right {
@@ -143,6 +197,17 @@ export default {
     border-radius: 10px;
     width: 450px;
     height: 350px;
+    @media (max-width: 920px) {
+      width: 400px;
+      height: 300px;
+    }
+    @media (max-width: 820px) {
+      width: 375px;
+      height: 275px;
+    }
+    @media (max-width: 660px) {
+      width: 100%;
+    }
   }
   div {
     display: flex;
@@ -167,6 +232,7 @@ export default {
   margin-right: 10px;
 }
 .description {
+  order: 2;
   width: 100%;
   background: gainsboro;
   display: flex;
@@ -177,6 +243,12 @@ export default {
 
   div {
     padding: 0 50px 0 180px;
+    @media (max-width: 920px) {
+      padding: 0 30px 0 180px;
+    }
+    @media (max-width: 660px) {
+      padding: 0 30px !important;
+    }
   }
 }
 .stars {
@@ -206,6 +278,9 @@ export default {
   width: 20px;
   height: 20px;
   margin: 5px;
+  @media (max-width: 1100px) {
+    padding: 0 5px !important;
+  }
   img {
     width: 20px;
     height: 20px;

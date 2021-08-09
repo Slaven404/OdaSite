@@ -27,10 +27,16 @@ export default {}
   grid-template-areas:
     'main main left right'
     'main main bottom bottom';
+  @media (max-width: 920px) {
+    grid-template-areas:
+      'main  left '
+      'right   bottom';
+  }
 
   img {
     width: 100%;
     max-height: 180px;
+    height: 100%;
     object-fit: cover;
     transition: 0.33s ease-in;
     &:hover {
@@ -42,10 +48,25 @@ export default {}
     }
   }
 }
+.main,
+.bottom,
+.left,
+.right {
+  @media (max-width: 920px) {
+  }
+}
 .main {
   grid-area: main;
+  padding-bottom: 4px;
+  @media (max-width: 920px) {
+    padding-bottom: 0;
+  }
   img {
     max-height: 445px !important;
+    height: 100%;
+    @media (max-width: 920px) {
+      max-height: 180px !important;
+    }
   }
 }
 .bottom {

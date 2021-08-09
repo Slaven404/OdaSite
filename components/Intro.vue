@@ -51,8 +51,8 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  width: 100%;
-  width: 1020px;
+  width: calc(100vw - 100px);
+  max-width: 1020px;
   height: 650px;
   display: flex;
   margin: auto;
@@ -74,6 +74,8 @@ export default {
       animation-duration: 0.33s;
       backdrop-filter: blur(5px);
       color: white;
+      @media (max-width: 920px) {
+      }
     }
   }
 }
@@ -92,10 +94,12 @@ export default {
   position: absolute;
 
   img {
-    width: 1020px;
+    width: calc(100vw - 100px);
+    max-width: 1020px;
     height: 650px;
     position: absolute;
     object-fit: cover;
+    height: 650px;
   }
 }
 .intro-center {
@@ -106,6 +110,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  @media (max-width: 660px) {
+    padding: 10px;
+  }
   .intro-title {
     padding: 0 5px;
     background-color: #00000020;
@@ -126,6 +133,13 @@ export default {
     background-color: #00000020;
     margin: 10px 50px;
   }
+  @media (max-width: 920px) {
+    .intro-title,
+    .intro-content,
+    .intro-adress {
+      margin: 10px 10px;
+    }
+  }
 }
 .left,
 .right {
@@ -139,5 +153,8 @@ export default {
   justify-content: center;
   min-width: 80px;
   cursor: pointer;
+  @media (max-width: 660px) {
+    min-width: 40px;
+  }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <div class="title">
-      <div class="logo">
-        <img style="width: 50px" src="@/assets/images/footer-logo.png" alt="" />
+      <div class="logo" @click="$router.push('/')">
+        <img class="logo-img" src="@/assets/images/footer-logo.png" alt="" />
       </div>
       Turistička agencija "Strom"
     </div>
@@ -40,18 +40,41 @@ export default {
   div {
     display: flex;
   }
+  @media (max-width: 820px) {
+    flex-direction: column;
+    .navigation {
+      margin-left: auto;
+      padding: 0;
+    }
+    .title {
+      padding: 0;
+    }
+  }
 }
 .logo {
   background-color: white;
   border-radius: 20px;
   padding: 2px 22px;
   margin: 10px;
+  cursor: pointer;
+}
+.logo-img {
+  width: 50px;
+  @media (max-width: 820px) {
+    width: 40px;
+  }
 }
 .title {
   font-size: 24px;
   font-weight: 600;
   align-items: center;
   padding: 10px;
+  @media (max-width: 920px) {
+    font-size: 22px;
+  }
+  @media (max-width: 820px) {
+    font-size: 20px;
+  }
 }
 .navigation {
   min-width: 300px;
@@ -66,6 +89,17 @@ export default {
     text-decoration: none;
     &:hover {
       border-bottom: 2px solid white;
+    }
+    @media (max-width: 1100px) {
+      margin: 10px;
+      font-size: 20px;
+    }
+    @media (max-width: 920px) {
+      margin: 8px;
+      font-size: 18px;
+    }
+    @media (max-width: 820px) {
+      margin: 6px;
     }
   }
 }
