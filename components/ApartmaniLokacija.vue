@@ -112,7 +112,8 @@ export default {}
     height: 50px;
     margin-right: 50px;
     @media (max-width: 920px) {
-      margin-right: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
     @media (max-width: 820px) {
       width: 40px;
