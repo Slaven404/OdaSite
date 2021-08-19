@@ -1,6 +1,5 @@
 <template>
   <div class="trip-container">
-    <div class="section">Organizovanje izleta</div>
     <div class="content" :class="right ? 'grid-col-2-1' : ''">
       <div v-if="!right" class="image-container">
         <div class="stars">

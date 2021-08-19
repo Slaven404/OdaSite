@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="title">
+    <div class="header-title">
       <div class="logo" @click="$router.push('/')">
         <img class="logo-img" src="@/assets/images/footer-logo.png" alt="" />
       </div>
@@ -64,7 +64,7 @@ export default {
     width: 40px;
   }
 }
-.title {
+.header-title {
   font-size: 24px;
   font-weight: 600;
   align-items: center;

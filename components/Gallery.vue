@@ -21,6 +21,8 @@ export default {}
 
 <style lang="scss" scoped>
 .images-container {
+  max-width: 1000px;
+  margin: auto;
   position: relative;
   display: grid;
   gap: 4px;

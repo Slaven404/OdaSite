@@ -1,5 +1,7 @@
 <template>
   <div class="izleti-container">
+    <div class="section">Lokacija apartmana</div>
+
     <izlet />
     <izlet :right="true" />
     <gallery />

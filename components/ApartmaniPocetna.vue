@@ -9,11 +9,11 @@
       make a type specimen book.
     </div>
     <div v-drag-me class="images">
-      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
-      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
-      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
-      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
-      <img style="width: 320px" src="@/assets/images/apartman1.jpg" alt="" />
+      <img src="@/assets/images/apartman1.jpg" alt="" />
+      <img src="@/assets/images/apartman1.jpg" alt="" />
+      <img src="@/assets/images/apartman1.jpg" alt="" />
+      <img src="@/assets/images/apartman1.jpg" alt="" />
+      <img src="@/assets/images/apartman1.jpg" alt="" />
     </div>
   </div>
 </template>
@@ -23,8 +23,12 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .images {
-  max-width: 970px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   justify-content: flex-start;
@@ -33,6 +37,7 @@ export default {}
   overflow: hidden;
   overflow-x: scroll;
   img {
+    width: 330px;
     margin: 3px;
     pointer-events: none;
     &:first-child {

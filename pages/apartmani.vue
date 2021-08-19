@@ -11,6 +11,8 @@
       </div>
       <gallery />
     </div>
+    <div class="section">Lokacija apartmana</div>
+
     <apartmani-lokacija />
   </div>
 </template>
@@ -19,7 +21,4 @@
 export default {}
 </script>
 
-<style lang="scss" scoped>
-.container {
-}
-</style>
+<style lang="scss" scoped></style>

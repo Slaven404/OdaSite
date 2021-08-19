@@ -1,7 +1,6 @@
 <template>
   <div class="location-container">
     <div class="location">
-      <div style="width: 200%" class="section">Lokacija apartmana</div>
       <div class="description">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -55,7 +54,7 @@ export default {}
   overflow: hidden;
   background: none !important;
   width: 400px;
-  height: 400px;
+  height: 350px;
   border-radius: 10px;
   @media (max-width: 820px) {
     width: 300px;
@@ -66,7 +65,7 @@ export default {}
   position: relative;
   text-align: right;
   width: 400px;
-  height: 400px;
+  height: 350px;
   border-radius: 10px;
   @media (max-width: 820px) {
     width: 300px;
@@ -78,7 +77,7 @@ export default {}
 .location-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   @media (max-width: 660px) {
     flex-direction: column;
     .location {
@@ -141,12 +140,12 @@ export default {}
   border: 1px solid black;
   border-radius: 10px;
   width: 400px;
-  height: 400px;
-  margin: 50px;
+  height: 350px;
+  margin: 30px auto;
   @media (max-width: 820px) {
     width: 300px;
     height: 300px;
-    margin: 20px;
+    margin: 20px auto;
   }
 }
 </style>
