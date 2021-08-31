@@ -4,22 +4,46 @@
       <!-- <img class="image" src="@/assets/images/footer.jpg" alt="" /> -->
       <div class="icon-container">
         <div class="icon">
-          <img src="@/assets/images/marker.png" alt="" />
+          <!-- <img src="@/assets/images/marker.png" alt="" /> -->
           Adresa agencije
+          <div>
+            <font-awesome-icon
+              class="fa-icon icon-address"
+              icon="map-marked-alt"
+            />
+          </div>
+          <div class="podaci">
+            Turistička agencija Strom Zlatibor Rujanska bb
+          </div>
         </div>
         <div class="icon">
-          <img src="@/assets/images/marker.png" alt="" />
+          <!-- <img src="@/assets/images/marker.png" alt="" /> -->
           Broj telefona
+
+          <div>
+            <font-awesome-icon class="fa-icon icon-phone" icon="phone" />
+          </div>
+          <div class="podaci">064-126-2220</div>
         </div>
         <div class="icon">
-          <img src="@/assets/images/marker.png" alt="" />
+          <!-- <img src="@/assets/images/marker.png" alt="" /> -->
           Email
+
+          <div>
+            <font-awesome-icon class="fa-icon icon-email" icon="envelope" />
+          </div>
+          <div class="podaci">slavencbf@gmail.com</div>
         </div>
       </div>
     </div>
     <div class="footer-logo">
       <div>
-        <img style="width: 50px" src="@/assets/images/footer-logo.png" alt="" />
+        <img
+          style="width: 80px"
+          src="@/assets/images/strom-zlatibor-logo.png"
+          alt=""
+        />
+
         Turisticka agencija "Strom"
       </div>
       <div>
@@ -36,6 +60,21 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.podaci {
+  height: 64px;
+}
+.fa-icon {
+  font-size: 64px;
+}
+.icon-address {
+  // color: blue;
+}
+.icon-phone {
+  // color: orange;
+}
+.icon-email {
+  // color: cyan;
+}
 .footer-image {
   background-image: url('@/assets/images/footer.jpg');
   background-size: cover;
@@ -61,6 +100,8 @@ export default {}
   color: white;
   font-weight: 500;
   font-size: 22px;
+  max-width: 250px;
+  text-align: center;
   img {
     width: 100px;
   }

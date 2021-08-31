@@ -9,11 +9,11 @@
       make a type specimen book.
     </div>
     <div v-drag-me class="images">
+      <img v-for="(i, key) in 8" :src="`./SajtZlatibor/Apartmani/apartman${i}.jpg`" alt="" />
+      <!-- <img src="@/assets/images/apartman1.jpg" alt="" />
       <img src="@/assets/images/apartman1.jpg" alt="" />
       <img src="@/assets/images/apartman1.jpg" alt="" />
-      <img src="@/assets/images/apartman1.jpg" alt="" />
-      <img src="@/assets/images/apartman1.jpg" alt="" />
-      <img src="@/assets/images/apartman1.jpg" alt="" />
+      <img src="@/assets/images/apartman1.jpg" alt="" /> -->
     </div>
   </div>
 </template>

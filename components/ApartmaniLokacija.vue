@@ -8,20 +8,33 @@
         scrambled it to make a type specimen book.
       </div>
       <div class="content">
-        <img src="@/assets/images/marker.png" alt="" />
-        <div>Autobuska stanica 300 m</div>
+        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+        <div>
+          <font-awesome-icon class="icon" icon="bus" />
+        </div>
+        <div class="short">Autobuska stanica 300 m</div>
       </div>
       <div class="content">
-        <img src="@/assets/images/marker.png" alt="" />
-        <div>Tržni centar 150 m</div>
+        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+        <div>
+          <font-awesome-icon class="icon" icon="shopping-cart" />
+        </div>
+        <div class="short">Tržni centar 150 m</div>
       </div>
       <div class="content">
-        <img src="@/assets/images/marker.png" alt="" />
-        <div>Jezero 800 m</div>
+        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+        <div>
+          <font-awesome-icon class="icon" icon="water" />
+        </div>
+        <div class="short">Jezero 800 m</div>
       </div>
       <div class="content">
-        <img src="@/assets/images/marker.png" alt="" />
-        <div>Parking 1000 m</div>
+        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+
+        <div>
+          <font-awesome-icon class="icon" icon="parking" />
+        </div>
+        <div class="short">Parking 1000 m</div>
       </div>
     </div>
     <div class="map">
@@ -74,6 +87,10 @@ export default {}
 }
 </style>
 <style lang="scss" scoped>
+.icon {
+  font-size: 30px;
+  margin-right: 50px;
+}
 .location-container {
   display: flex;
   justify-content: center;
@@ -119,7 +136,7 @@ export default {}
       height: 40px;
     }
   }
-  div {
+  .short {
     display: flex;
     justify-content: center;
     align-items: center;

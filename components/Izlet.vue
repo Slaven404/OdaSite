@@ -4,19 +4,24 @@
       <div v-if="!right" class="image-container">
         <div class="stars">
           <div class="star" v-for="(n, key) in 5" :key="key">
-            <img src="@/assets/images/marker.png" alt="" />
+            <span>
+              <font-awesome-icon class="star-icon" icon="star" />
+            </span>
           </div>
         </div>
         <div class="image-content">
           <div class="image-control">
             <div class="relative">
-              <div class="left">L</div>
-              <img src="@/assets/images/apartman1.jpg" alt="" />
-              <div class="right">L</div>
+              <div class="left" @click="prew">L</div>
+              <img :src="activeImage" alt="" />
+              <div class="right" @click="next">R</div>
             </div>
             <div class="dots">
               <div class="dot" v-for="(n, key) in 3" :key="key">
-                <img src="@/assets/images/marker.png" alt="" />
+                <div class="div-circle"></div>
+                <!-- <span>
+                  <font-awesome-icon class="circle-icon" icon="circle" />
+                </span> -->
               </div>
             </div>
           </div>
@@ -33,19 +38,24 @@
       <div v-if="right" class="image-container">
         <div class="stars">
           <div class="star" v-for="(n, key) in 5" :key="key">
-            <img src="@/assets/images/marker.png" alt="" />
+            <span>
+              <font-awesome-icon class="star-icon" icon="star" />
+            </span>
           </div>
         </div>
         <div class="image-content">
           <div class="image-control">
             <div class="relative">
-              <div class="left">L</div>
-              <img src="@/assets/images/apartman1.jpg" alt="" />
-              <div class="right">L</div>
+              <div class="left" @click="prew">L</div>
+              <img :src="activeImage" alt="" />
+              <div class="right" @click="next">R</div>
             </div>
             <div class="dots">
               <div class="dot" v-for="(n, key) in 3" :key="key">
-                <img src="@/assets/images/marker.png" alt="" />
+                <div class="div-circle"></div>
+                <!-- <span>
+                  <font-awesome-icon class="circle-icon" icon="circle" />
+                </span> -->
               </div>
             </div>
           </div>
@@ -62,11 +72,50 @@ export default {
       type: Boolean,
       default: false,
     },
+    images: {
+      type: Array,
+      default() {
+        return []
+      },
+    },
+  },
+  data() {
+    return {
+      imgIndex: 0,
+    }
+  },
+
+  computed: {
+    activeImage() {
+      return this.images[this.imgIndex]
+    },
+  },
+  methods: {
+    prew() {
+      this.imgIndex--
+      if (this.imgIndex < 0) {
+        this.imgIndex = this.images.length - 1
+      }
+    },
+    next() {
+      this.imgIndex++
+      if (this.imgIndex > this.images.length - 1) {
+        this.imgIndex = 0
+      }
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
+.star-icon {
+  color: #ffd700;
+  font-size: 20px;
+}
+.circle-icon {
+  color: #191a1c;
+  font-size: 8px;
+}
 .grid-col-2-1 {
   grid-template-columns: 2fr 1fr !important;
   .image-container {
@@ -193,6 +242,7 @@ export default {
   }
 
   img {
+    object-fit: cover;
     border-radius: 10px;
     width: 450px;
     height: 350px;
@@ -211,7 +261,7 @@ export default {
   div {
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    // padding: 0 10px;
   }
 }
 .left,
@@ -254,6 +304,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   position: relative;
+  margin: auto;
 }
 
 .dots {
@@ -272,13 +323,21 @@ export default {
     height: 25px;
   }
 }
+.div-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: black;
+  border: 1px solid black;
+}
 .dot {
   display: flex;
-  width: 20px;
+  width: auto;
+  margin: auto;
   height: 20px;
   margin: 5px;
   @media (max-width: 1100px) {
-    padding: 0 5px !important;
+    // padding: 0 5px !important;
   }
   img {
     width: 20px;

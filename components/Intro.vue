@@ -27,21 +27,25 @@ export default {
       json: json,
     }
   },
+  mounted()
+  {
+    console.log("json:", json);
+  },
   computed: {
     bgImage() {
-      return `./images/${this.json[this.imgIndex].image}.jpg`
+      return `./SajtZlatibor/Agencija/${this.json[this.imgIndex].image}.jpg`
     },
   },
   methods: {
     prew() {
       this.imgIndex--
       if (this.imgIndex < 0) {
-        this.imgIndex = 4
+        this.imgIndex = this.json.length-1
       }
     },
     next() {
       this.imgIndex++
-      if (this.imgIndex > 4) {
+      if (this.imgIndex > this.json.length-1) {
         this.imgIndex = 0
       }
     },

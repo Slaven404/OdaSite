@@ -2,7 +2,11 @@
   <div class="header">
     <div class="header-title">
       <div class="logo" @click="$router.push('/')">
-        <img class="logo-img" src="@/assets/images/footer-logo.png" alt="" />
+        <img
+          class="logo-img"
+          src="@/assets/images/strom-zlatibor-logo.png"
+          alt=""
+        />
       </div>
       Turistička agencija "Strom"
     </div>
@@ -59,9 +63,9 @@ export default {
   cursor: pointer;
 }
 .logo-img {
-  width: 50px;
+  width: 80px;
   @media (max-width: 820px) {
-    width: 40px;
+    width: 60px;
   }
 }
 .header-title {
