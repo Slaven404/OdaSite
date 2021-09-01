@@ -40,7 +40,7 @@ body {
   background: transparent;
 }
 .section {
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 2px;
   color: orange;
   font-weight: 500;

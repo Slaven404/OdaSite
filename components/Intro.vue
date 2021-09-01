@@ -1,6 +1,8 @@
 <template>
   <div class="intro">
-    <div class="left" @click="prew">L</div>
+    <div class="left" @click="prew">
+      <font-awesome-icon class="icon" icon="chevron-left" />
+    </div>
     <div class="intro-center">
       <div class="intro-title">
         {{ json[imgIndex].title }}
@@ -11,7 +13,9 @@
         {{ json[imgIndex].description }}
       </div>
     </div>
-    <div class="right" @click="next">R</div>
+    <div class="right" @click="next">
+      <font-awesome-icon class="icon" icon="chevron-right" />
+    </div>
     <div class="bg-image">
       <img :src="bgImage" alt="" />
     </div>

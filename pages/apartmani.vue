@@ -9,7 +9,7 @@
         since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
       </div>
-      <gallery style="margin-bottom: 50px" />
+      <gallery :images="images" style="margin-bottom: 50px" />
     </div>
 
     <div class="container-location">
@@ -21,7 +21,22 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      images: [
+        './SajtZlatibor/Apartmani/apartman1.jpg',
+        './SajtZlatibor/Apartmani/apartman2.jpg',
+        './SajtZlatibor/Apartmani/apartman3.jpg',
+        './SajtZlatibor/Apartmani/apartman4.jpg',
+        './SajtZlatibor/Apartmani/apartman5.jpg',
+        './SajtZlatibor/Apartmani/apartman6.jpg',
+        './SajtZlatibor/Apartmani/apartman7.jpg',
+        './SajtZlatibor/Apartmani/apartman8.jpg',
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

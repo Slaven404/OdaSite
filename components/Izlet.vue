@@ -12,9 +12,13 @@
         <div class="image-content">
           <div class="image-control">
             <div class="relative">
-              <div class="left" @click="prew">L</div>
+              <div class="left" @click="prew">
+                <font-awesome-icon class="icon" icon="chevron-left" />
+              </div>
               <img :src="activeImage" alt="" />
-              <div class="right" @click="next">R</div>
+              <div class="right" @click="next">
+                <font-awesome-icon class="icon" icon="chevron-right" />
+              </div>
             </div>
             <!-- <div class="dots">
               <div class="dot" v-for="(n, key) in 3" :key="key">
@@ -43,9 +47,13 @@
         <div class="image-content">
           <div class="image-control">
             <div class="relative">
-              <div class="left" @click="prew">L</div>
+              <div class="left" @click="prew">
+                <font-awesome-icon class="icon" icon="chevron-left" />
+              </div>
               <img :src="activeImage" alt="" />
-              <div class="right" @click="next">R</div>
+              <div class="right" @click="next">
+                <font-awesome-icon class="icon" icon="chevron-right" />
+              </div>
             </div>
             <!-- <div class="dots">
               <div class="dot" v-for="(n, key) in 3" :key="key">

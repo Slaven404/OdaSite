@@ -7,7 +7,11 @@
     <izlet :images="vranesa" />
     <izlet :right="true" :images="andricgrad" />
 
-    <gallery />
+    <div class="container-gallery">
+      <div class="section gallery-section">Galerija</div>
+
+      <gallery :images="images" />
+    </div>
   </div>
 </template>
 
@@ -47,7 +51,34 @@ export default {
         './SajtZlatibor/andricgrad/andricgrad7.jpg',
         './SajtZlatibor/andricgrad/andricgrad8.jpg',
       ],
+      aparmani: [
+        './SajtZlatibor/Apartmani/apartman1.jpg',
+        './SajtZlatibor/Apartmani/apartman2.jpg',
+        './SajtZlatibor/Apartmani/apartman3.jpg',
+        './SajtZlatibor/Apartmani/apartman4.jpg',
+        './SajtZlatibor/Apartmani/apartman5.jpg',
+        './SajtZlatibor/Apartmani/apartman6.jpg',
+        './SajtZlatibor/Apartmani/apartman7.jpg',
+        './SajtZlatibor/Apartmani/apartman8.jpg',
+      ],
     }
+  },
+  computed: {
+    images() {
+      let imgs = []
+      imgs.push(
+        ...this.aparmani,
+        ...this.andricgrad,
+        ...this.vranesa,
+        ...this.tara,
+        ...this.sirogojno
+      )
+      // imgs.push(...andricgrad);
+      // imgs.push(...vranesa);
+      // imgs.push(...tara);
+      // imgs.push(...sirogojno);
+      return imgs
+    },
   },
 }
 </script>
@@ -55,5 +86,18 @@ export default {
 <style lang="scss" scoped>
 .izleti-container {
   margin: auto;
+}
+.gallery-section {
+  margin-bottom: 30px;
+}
+.container-gallery {
+  width: 100%;
+  background: rgba(125, 125, 125, 0.2);
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 </style>
