@@ -21,7 +21,7 @@ export default {}
 
 <style lang="scss" scoped>
 .images-container {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
   position: relative;
   display: grid;
@@ -37,7 +37,7 @@ export default {}
 
   img {
     width: 100%;
-    max-height: 180px;
+    max-height: 250px;
     height: 100%;
     object-fit: cover;
     transition: 0.33s ease-in;
@@ -64,10 +64,10 @@ export default {}
     padding-bottom: 0;
   }
   img {
-    max-height: 445px !important;
+    max-height: 500px !important;
     height: 100%;
     @media (max-width: 920px) {
-      max-height: 180px !important;
+      max-height: 250px !important;
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="izleti-container">
-    <div class="section">Lokacija apartmana</div>
+    <div class="section">Organizovanje izleta</div>
 
     <izlet :images="sirogojno" />
     <izlet :right="true" :images="tara" />
@@ -52,4 +52,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.izleti-container {
+  margin: auto;
+}
+</style>

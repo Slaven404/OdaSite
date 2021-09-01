@@ -33,14 +33,18 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: green;
+  background-color: black;
   color: white;
   font-size: 22px;
-  padding: 0 40px;
+  // padding: 0 40px;
   padding-right: 0px;
   min-height: 100px;
+  background-image: url('@/assets/images/freedownload/wood2.jpg');
   div {
     display: flex;
   }

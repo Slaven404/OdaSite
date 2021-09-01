@@ -95,6 +95,11 @@ export default {}
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  max-width: 1400px;
+  margin: auto;
+  // background: whitesmoke;
+  background: transparent;
+  // background: rgba(125, 125, 125, 0.2);
   @media (max-width: 660px) {
     flex-direction: column;
     .location {

@@ -2,9 +2,12 @@
   <div class="index-class">
     <intro class="intro" />
     <apartmani-pocetna class="apartmani-pocetna" />
-    <div class="section">Lokacija apartmana</div>
 
-    <apartmani-lokacija />
+    <div class="container-location">
+      <div class="section">Lokacija apartmana</div>
+
+      <apartmani-lokacija />
+    </div>
     <div class="section">Organizovanje izleta</div>
     <izlet :images="tara" />
     <izlet :images="vranesa" :right="true" />
@@ -33,4 +36,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container-location {
+  background: rgba(125, 125, 125, 0.2);
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+</style>

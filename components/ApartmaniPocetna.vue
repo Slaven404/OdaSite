@@ -9,7 +9,12 @@
       make a type specimen book.
     </div>
     <div v-drag-me class="images">
-      <img v-for="(i, key) in 8" :src="`./SajtZlatibor/Apartmani/apartman${i}.jpg`" alt="" />
+      <img
+        v-for="(i, key) in 8"
+        :key="key"
+        :src="`./SajtZlatibor/Apartmani/apartman${i}.jpg`"
+        alt=""
+      />
       <!-- <img src="@/assets/images/apartman1.jpg" alt="" />
       <img src="@/assets/images/apartman1.jpg" alt="" />
       <img src="@/assets/images/apartman1.jpg" alt="" />
@@ -26,9 +31,15 @@ export default {}
 .container {
   margin-top: 30px;
   margin-bottom: 30px;
+  max-width: 1400px;
+  margin: auto;
+  // background: whitesmoke;
+  background: rgba(125, 125, 125, 0.2);
+  border-radius: 20px;
+  padding-bottom: 50px;
 }
 .images {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
   display: flex;
   justify-content: flex-start;
@@ -37,8 +48,9 @@ export default {}
   overflow: hidden;
   overflow-x: scroll;
   img {
-    width: 330px;
-    margin: 3px;
+    // width: 396px;
+    width: 33.33%;
+    margin: 2px;
     pointer-events: none;
     &:first-child {
       margin-left: 0;
@@ -64,7 +76,7 @@ export default {}
   border-radius: 10px;
 }
 .images::-webkit-scrollbar-thumb {
-  background-color: rgb(192, 18, 18);
+  background-color: rgb(148, 88, 54);
 
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;

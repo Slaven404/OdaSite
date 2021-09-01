@@ -27,9 +27,8 @@ export default {
       json: json,
     }
   },
-  mounted()
-  {
-    console.log("json:", json);
+  mounted() {
+    console.log('json:', json)
   },
   computed: {
     bgImage() {
@@ -40,12 +39,12 @@ export default {
     prew() {
       this.imgIndex--
       if (this.imgIndex < 0) {
-        this.imgIndex = this.json.length-1
+        this.imgIndex = this.json.length - 1
       }
     },
     next() {
       this.imgIndex++
-      if (this.imgIndex > this.json.length-1) {
+      if (this.imgIndex > this.json.length - 1) {
         this.imgIndex = 0
       }
     },
@@ -55,9 +54,11 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  width: calc(100vw - 100px);
-  max-width: 1020px;
-  height: 650px;
+  // width: calc(100vw - 100px);
+  // max-width: 1020px;
+  // max-width: 1200px;
+  height: 850px;
+  margin-bottom: 50px !important;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -96,14 +97,16 @@ export default {
   left: 0;
   z-index: 1;
   position: absolute;
-
+  // max-width: 1200px;
+  width: 100%;
   img {
-    width: calc(100vw - 100px);
-    max-width: 1020px;
-    height: 650px;
+    // width: calc(100vw - 100px);
+    // max-width: 1020px;
+    // max-width: 1200px;
+    width: 100%;
     position: absolute;
     object-fit: cover;
-    height: 650px;
+    height: 850px;
   }
 }
 .intro-center {

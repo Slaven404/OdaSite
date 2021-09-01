@@ -76,7 +76,8 @@ export default {}
   // color: cyan;
 }
 .footer-image {
-  background-image: url('@/assets/images/footer.jpg');
+  background-image: url('@/assets/images/freedownload/wood5.jpg');
+
   background-size: cover;
   background-position-y: bottom;
   image {

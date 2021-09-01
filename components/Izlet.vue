@@ -2,13 +2,13 @@
   <div class="trip-container">
     <div class="content" :class="right ? 'grid-col-2-1' : ''">
       <div v-if="!right" class="image-container">
-        <div class="stars">
+        <!-- <div class="stars">
           <div class="star" v-for="(n, key) in 5" :key="key">
             <span>
               <font-awesome-icon class="star-icon" icon="star" />
             </span>
           </div>
-        </div>
+        </div> -->
         <div class="image-content">
           <div class="image-control">
             <div class="relative">
@@ -16,14 +16,11 @@
               <img :src="activeImage" alt="" />
               <div class="right" @click="next">R</div>
             </div>
-            <div class="dots">
+            <!-- <div class="dots">
               <div class="dot" v-for="(n, key) in 3" :key="key">
                 <div class="div-circle"></div>
-                <!-- <span>
-                  <font-awesome-icon class="circle-icon" icon="circle" />
-                </span> -->
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -36,13 +33,13 @@
         </div>
       </div>
       <div v-if="right" class="image-container">
-        <div class="stars">
+        <!-- <div class="stars">
           <div class="star" v-for="(n, key) in 5" :key="key">
             <span>
               <font-awesome-icon class="star-icon" icon="star" />
             </span>
           </div>
-        </div>
+        </div> -->
         <div class="image-content">
           <div class="image-control">
             <div class="relative">
@@ -50,14 +47,11 @@
               <img :src="activeImage" alt="" />
               <div class="right" @click="next">R</div>
             </div>
-            <div class="dots">
+            <!-- <div class="dots">
               <div class="dot" v-for="(n, key) in 3" :key="key">
                 <div class="div-circle"></div>
-                <!-- <span>
-                  <font-awesome-icon class="circle-icon" icon="circle" />
-                </span> -->
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -117,7 +111,8 @@ export default {
   font-size: 8px;
 }
 .grid-col-2-1 {
-  grid-template-columns: 2fr 1fr !important;
+  // grid-template-columns: 2fr 1fr !important;
+  grid-template-columns: 1fr 1fr !important;
   .image-container {
     order: 2;
   }
@@ -151,9 +146,11 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1100px;
+  max-width: 1400px;
+  // max-width: 1200px;
   padding: 0 50px;
-  background: whitesmoke;
+  // background: whitesmoke;
+  background: transparent;
   margin: 20px auto;
   @media (max-width: 1100px) {
     padding: 0 !important;
@@ -161,7 +158,8 @@ export default {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  // grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   @media (max-width: 660px) {
     grid-template-columns: 1fr;
   }
@@ -172,7 +170,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 400px;
+  // min-height: 400px;
+  min-height: 500px;
   @media (max-width: 920px) {
     min-height: 350px;
   }
@@ -185,7 +184,8 @@ export default {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  min-height: 400px;
+  // min-height: 400px;
+  min-height: 500px;
   @media (max-width: 920px) {
     min-height: 350px;
   }
@@ -197,8 +197,8 @@ export default {
   position: absolute;
   top: 10px;
   left: 0;
-  width: 450px;
-  height: 350px;
+  width: 125%;
+  height: 450px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -218,6 +218,7 @@ export default {
   }
   .relative {
     position: relative;
+    width: 100%;
     @media (max-width: 660px) {
       width: 100%;
     }
@@ -244,8 +245,8 @@ export default {
   img {
     object-fit: cover;
     border-radius: 10px;
-    width: 450px;
-    height: 350px;
+    width: 100%;
+    height: 480px;
     @media (max-width: 920px) {
       width: 400px;
       height: 300px;
@@ -270,6 +271,8 @@ export default {
   height: 100%;
   position: absolute;
   cursor: pointer;
+  width: 20px;
+  justify-content: center;
 }
 .left {
   border-radius: 10px 0 0 10px;
@@ -278,7 +281,6 @@ export default {
   right: 0;
 
   border-radius: 0 10px 10px 0;
-  margin-right: 10px;
 }
 .description {
   order: 2;
