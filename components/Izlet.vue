@@ -214,17 +214,21 @@ export default {
   flex-direction: column;
 
   @media (max-width: 920px) {
-    width: 400px;
+    // width: 400px;
     height: 300px;
   }
   @media (max-width: 820px) {
-    width: 375px;
+    // width: 375px;
     height: 275px;
   }
   @media (max-width: 660px) {
     width: 100%;
   }
   .relative {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     position: relative;
     width: 100%;
     @media (max-width: 660px) {
@@ -256,11 +260,11 @@ export default {
     width: 100%;
     height: 480px;
     @media (max-width: 920px) {
-      width: 400px;
+      // width: 400px;
       height: 300px;
     }
     @media (max-width: 820px) {
-      width: 375px;
+      // width: 375px;
       height: 275px;
     }
     @media (max-width: 660px) {

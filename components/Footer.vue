@@ -64,6 +64,17 @@ export default {}
 }
 .fa-icon {
   font-size: 64px;
+
+  @media (max-width: 920px) {
+    font-size: 54px;
+  }
+  @media (max-width: 820px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 660px) {
+    font-size: 32px;
+  }
 }
 .icon-address {
   // color: blue;
@@ -90,6 +101,13 @@ export default {}
 .icon-container {
   display: flex;
   justify-content: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    .icon {
+      min-width: 250px;
+    }
+  }
 }
 .icon {
   display: flex;
@@ -104,6 +122,16 @@ export default {}
   text-align: center;
   padding: 20px;
   background: radial-gradient(black, #00000080, #00000080, transparent);
+  @media (max-width: 920px) {
+    font-size: 20px;
+  }
+  @media (max-width: 820px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 660px) {
+    font-size: 16px;
+  }
   img {
     width: 100px;
   }
@@ -114,6 +142,10 @@ export default {}
   align-items: center;
   background: radial-gradient(transparent, transparent, black, black),
     url(/_nuxt/assets/images/freedownload/wood2.jpg);
+
+  @media (max-width: 660px) {
+    flex-direction: column;
+  }
   div {
     display: flex;
     align-items: center;

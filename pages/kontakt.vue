@@ -33,6 +33,15 @@ export default {}
   width: 1400px;
   height: 700px;
   border-radius: 10px;
+  margin: auto;
+  @media (max-width: 1400px) {
+    width: 1000px;
+    height: 500px;
+  }
+  @media (max-width: 1100px) {
+    width: 700px;
+    height: 400px;
+  }
   @media (max-width: 820px) {
     width: 300px;
     height: 300px;
@@ -44,6 +53,14 @@ export default {}
   width: 1400px;
   height: 700px;
   border-radius: 10px;
+  @media (max-width: 1400px) {
+    width: 1000px;
+    height: 500px;
+  }
+  @media (max-width: 1100px) {
+    width: 700px;
+    height: 400px;
+  }
   @media (max-width: 820px) {
     width: 300px;
     height: 300px;

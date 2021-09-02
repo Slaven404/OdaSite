@@ -87,7 +87,7 @@ export default {
   }
 }
 .navigation {
-  min-width: 300px;
+  //min-width: 300px;
   align-items: center;
   padding: 10px;
 

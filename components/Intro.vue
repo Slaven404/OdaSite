@@ -34,6 +34,7 @@ export default {
 
   computed: {
     bgImage() {
+      return this.json[this.imgIndex].image
       return `./SajtZlatibor/Agencija/${this.json[this.imgIndex].image}.jpg`
     },
   },
@@ -56,6 +57,10 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   // width: calc(100vw - 100px);
   // max-width: 1020px;
   // max-width: 1200px;
