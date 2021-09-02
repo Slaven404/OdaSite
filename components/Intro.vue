@@ -16,7 +16,7 @@
     <div class="right" @click="next">
       <font-awesome-icon class="icon" icon="chevron-right" />
     </div>
-    <div class="bg-image">
+    <div :key="imgIndex" class="bg-image zoom-image">
       <img :src="bgImage" alt="" />
     </div>
   </div>

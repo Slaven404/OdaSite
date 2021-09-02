@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="images-container">
+    <div :key="offset" class="images-container fade-in-image">
       <div class="main">
         <img @click="index = 0 + offset" :src="images[0 + offset]" alt="" />
       </div>
@@ -100,6 +100,10 @@ export default {
   }
 }
 .images-container {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   width: calc(100% - 100px);
   max-width: 1400px;
   margin: auto;
@@ -116,6 +120,8 @@ export default {
   }
 
   img {
+    cursor: pointer;
+
     width: 100%;
     max-height: 244px;
     height: 100%;

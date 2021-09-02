@@ -15,7 +15,12 @@
               <div class="left" @click="prew">
                 <font-awesome-icon class="icon" icon="chevron-left" />
               </div>
-              <img :src="activeImage" alt="" />
+              <img
+                :key="imgIndex"
+                class="zoom-image"
+                :src="activeImage"
+                alt=""
+              />
               <div class="right" @click="next">
                 <font-awesome-icon class="icon" icon="chevron-right" />
               </div>
@@ -50,7 +55,12 @@
               <div class="left" @click="prew">
                 <font-awesome-icon class="icon" icon="chevron-left" />
               </div>
-              <img :src="activeImage" alt="" />
+              <img
+                :key="imgIndex"
+                class="zoom-image"
+                :src="activeImage"
+                alt=""
+              />
               <div class="right" @click="next">
                 <font-awesome-icon class="icon" icon="chevron-right" />
               </div>

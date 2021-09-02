@@ -67,4 +67,108 @@ body {
     padding: 20px;
   }
 }
+.fade-in-image {
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+}
+
+.zoom-image {
+  animation: zoom 0.5s;
+  -webkit-animation: zoom 0.5s;
+  -moz-animation: zoom 0.5s;
+  -o-animation: zoom 0.5s;
+  -ms-animation: zoom 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes zoom {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes zoom {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-ms-keyframes zoom {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 </style>
