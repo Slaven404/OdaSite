@@ -123,7 +123,12 @@ export default {
 
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+
+  padding: 50px 300px;
+
+  @media (max-width: 1400px) {
+    padding: 50px;
+  }
   @media (max-width: 660px) {
     padding: 10px;
   }
