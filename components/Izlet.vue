@@ -34,6 +34,9 @@
         </div>
       </div>
       <div class="description">
+        <div class="decription-title">
+          {{ content.title }}
+        </div>
         <div class="decription-content">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -90,6 +93,15 @@ export default {
         return []
       },
     },
+    content: {
+      type: Object,
+      default() {
+        return {
+          text: '',
+          title: '',
+        }
+      },
+    },
   },
   data() {
     return {
@@ -120,6 +132,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.decription-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
 .star-icon {
   color: #ffd700;
   font-size: 20px;
@@ -313,6 +330,7 @@ export default {
   align-items: center;
   border-radius: 10px;
   padding: 20px 0;
+  flex-direction: column;
 
   div {
     padding: 0 50px 0 180px;

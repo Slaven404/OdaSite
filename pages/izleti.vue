@@ -2,10 +2,10 @@
   <div class="izleti-container">
     <div class="section">Organizovanje izleta</div>
 
-    <izlet :images="sirogojno" />
-    <izlet :right="true" :images="tara" />
-    <izlet :images="vranesa" />
-    <izlet :right="true" :images="andricgrad" />
+    <izlet :images="sirogojno" :content="sirogojnoText" />
+    <izlet :right="true" :images="tara" :content="taraText" />
+    <izlet :images="vranesa" :content="vranesaText" />
+    <izlet :right="true" :images="andricgrad" :content="andricgradText" />
 
     <div class="container-gallery">
       <div class="section gallery-section">Galerija</div>
@@ -19,6 +19,10 @@
 export default {
   data() {
     return {
+      sirogojnoText: {
+        title: 'Sirogojno - etno selo,  Stopića pećina, vodopad Gostilje',
+        text: '',
+      },
       sirogojno: [
         './SajtZlatibor/sirogojno/sirogojno1.jpg',
         './SajtZlatibor/sirogojno/sirogojno2.jpg',
@@ -26,7 +30,10 @@ export default {
         './SajtZlatibor/sirogojno/sirogojno4.jpg',
         './SajtZlatibor/sirogojno/sirogojno5.jpg',
       ],
-
+      taraText: {
+        title: 'Tara, vidikovac Banjska stena',
+        text: '',
+      },
       tara: [
         './SajtZlatibor/tara/tara1.jpg',
         './SajtZlatibor/tara/tara2.jpg',
@@ -34,13 +41,20 @@ export default {
         './SajtZlatibor/tara/tara4.jpg',
         './SajtZlatibor/tara/tara5.jpg',
       ],
+      vranesaText: {
+        title: 'Zlatarsko jezero, vidikovac Vraneša',
+        text: '',
+      },
       vranesa: [
         './SajtZlatibor/vranesa/vranesa1.jpg',
         './SajtZlatibor/vranesa/vranesa2.jpg',
         './SajtZlatibor/vranesa/vranesa3.jpg',
         './SajtZlatibor/vranesa/vranesa4.jpg',
       ],
-
+      andricgradText: {
+        title: 'Andrić grad Višegrad- Na Drini ćuprija - Uvacko jezero',
+        text: '',
+      },
       andricgrad: [
         './SajtZlatibor/andricgrad/andricgrad1.jpg',
         './SajtZlatibor/andricgrad/andricgrad2.jpg',

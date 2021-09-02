@@ -9,8 +9,8 @@
       <apartmani-lokacija />
     </div>
     <div class="section">Organizovanje izleta</div>
-    <izlet :images="tara" />
-    <izlet :images="vranesa" :right="true" />
+    <izlet :images="tara" :content="taraText" />
+    <izlet :images="vranesa" :right="true" :content="vranesaText" />
   </div>
 </template>
 
@@ -18,6 +18,10 @@
 export default {
   data() {
     return {
+      taraText: {
+        title: 'Tara, vidikovac Banjska stena',
+        text: '',
+      },
       tara: [
         './SajtZlatibor/tara/tara1.jpg',
         './SajtZlatibor/tara/tara2.jpg',
@@ -25,6 +29,10 @@ export default {
         './SajtZlatibor/tara/tara4.jpg',
         './SajtZlatibor/tara/tara5.jpg',
       ],
+      vranesaText: {
+        title: 'Zlatarsko jezero, vidikovac Vraneša',
+        text: '',
+      },
       vranesa: [
         './SajtZlatibor/vranesa/vranesa1.jpg',
         './SajtZlatibor/vranesa/vranesa2.jpg',
