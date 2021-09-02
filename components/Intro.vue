@@ -31,9 +31,7 @@ export default {
       json: json,
     }
   },
-  mounted() {
-    console.log('json:', json)
-  },
+
   computed: {
     bgImage() {
       return `./SajtZlatibor/Agencija/${this.json[this.imgIndex].image}.jpg`
@@ -61,7 +59,7 @@ export default {
   // width: calc(100vw - 100px);
   // max-width: 1020px;
   // max-width: 1200px;
-  height: 850px;
+  height: 837px;
   margin-bottom: 50px !important;
   display: flex;
   margin: auto;
@@ -110,7 +108,7 @@ export default {
     width: 100%;
     position: absolute;
     object-fit: cover;
-    height: 850px;
+    height: 837px;
   }
 }
 .intro-center {

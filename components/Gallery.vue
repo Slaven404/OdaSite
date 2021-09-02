@@ -2,16 +2,16 @@
   <div>
     <div class="images-container">
       <div class="main">
-        <img :src="images[0 + offset]" alt="" />
+        <img @click="index = 0 + offset" :src="images[0 + offset]" alt="" />
       </div>
       <div v-if="images[1 + offset]" class="left">
-        <img :src="images[1 + offset]" alt="" />
+        <img @click="index = 1 + offset" :src="images[1 + offset]" alt="" />
       </div>
       <div v-if="images[2 + offset]" class="right">
-        <img :src="images[2 + offset]" alt="" />
+        <img @click="index = 2 + offset" :src="images[2 + offset]" alt="" />
       </div>
       <div v-if="images[3 + offset]" class="bottom">
-        <img :src="images[3 + offset]" alt="" />
+        <img @click="index = 3 + offset" :src="images[3 + offset]" alt="" />
       </div>
     </div>
     <div class="pagination" v-if="images.length > 4">
@@ -23,14 +23,24 @@
       >
         {{ n }}
       </div>
-
-      <!-- <div :class="offset == 4 ? 'selected' : ''" @click="two">2</div> -->
     </div>
+    <client-only placeholder="Loading...">
+      <VueGallerySlideshow
+        :images="images"
+        :index="index"
+        @close="index = null"
+      >
+      </VueGallerySlideshow>
+    </client-only>
   </div>
 </template>
 
 <script>
+import VueGallerySlideshow from 'vue-gallery-slideshow'
 export default {
+  components: {
+    VueGallerySlideshow,
+  },
   props: {
     images: {
       type: Array,
@@ -42,6 +52,7 @@ export default {
   data() {
     return {
       offset: 0,
+      index: null,
     }
   },
   computed: {
@@ -63,6 +74,11 @@ export default {
 }
 </script>
 
+<style lang="scss">
+.vgs__container {
+  height: 80vh;
+}
+</style>
 <style lang="scss" scoped>
 .selected {
   border: 2px solid white !important;

@@ -65,6 +65,8 @@ export default {
   padding: 2px 22px;
   margin: 10px;
   cursor: pointer;
+  min-width: 80px;
+  min-height: 48px;
 }
 .logo-img {
   width: 80px;

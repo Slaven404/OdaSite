@@ -15,9 +15,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/index.css'],
+  css: ['~layouts/global.css'],
   styleResources: {
-    scss: ['@/assets/partial/*.scss'],
+    scss: [],
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/imports.client.js', '~/plugins/dragElements.client.js'],

@@ -43,8 +43,7 @@
           src="@/assets/images/strom-zlatibor-logo.png"
           alt=""
         />
-
-        Turisticka agencija "Strom"
+        <a href="/"> Turisticka agencija "Strom" </a>
       </div>
       <div>
         <NuxtLink to="/apartmani">Apartmani</NuxtLink>
@@ -97,12 +96,14 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  // margin: 50px;
   color: white;
   font-weight: 500;
   font-size: 22px;
   max-width: 250px;
   text-align: center;
+  padding: 20px;
+  background: radial-gradient(black, #00000080, #00000080, transparent);
   img {
     width: 100px;
   }
@@ -111,7 +112,8 @@ export default {}
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: whitesmoke;
+  background: radial-gradient(transparent, transparent, black, black),
+    url(/_nuxt/assets/images/freedownload/wood2.jpg);
   div {
     display: flex;
     align-items: center;
@@ -120,7 +122,7 @@ export default {}
     }
     a {
       margin: 20px;
-      color: black;
+      color: white;
       text-decoration: none;
     }
   }

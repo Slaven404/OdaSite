@@ -10,6 +10,7 @@
     </div>
     <div v-drag-me class="images">
       <img
+        class="slika"
         v-for="(i, key) in 8"
         :key="key"
         :src="`./SajtZlatibor/Apartmani/apartman${i}.jpg`"
@@ -28,6 +29,15 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.slika {
+  &:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -moz-transform: scale3d(1.05, 1.05, 1.05);
+    -o-transform: scale3d(1.05, 1.05, 1.05);
+    -ms-transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
 .container {
   margin-top: 30px;
   margin-bottom: 30px;
