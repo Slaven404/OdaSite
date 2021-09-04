@@ -319,7 +319,8 @@ export default {
 .description {
   order: 2;
   width: 100%;
-  background: gainsboro;
+  // background: gainsboro;
+  background: rgba(255, 252, 238, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
