@@ -76,7 +76,7 @@ export default {
 
 <style lang="scss">
 .vgs__container {
-  height: 80vh;
+  height: 80vh !important;
 }
 </style>
 <style lang="scss" scoped>

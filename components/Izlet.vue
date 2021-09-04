@@ -262,7 +262,7 @@ export default {
         animation-name: bgBlur;
         animation-timing-function: ease-out;
         animation-duration: 0.5s;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(3px);
         color: white;
       }
     }
@@ -272,7 +272,7 @@ export default {
       backdrop-filter: blur(0px);
     }
     to {
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(3px);
     }
   }
 
@@ -305,7 +305,7 @@ export default {
   height: 100%;
   position: absolute;
   cursor: pointer;
-  width: 20px;
+  width: 10%;
   justify-content: center;
 }
 .left {

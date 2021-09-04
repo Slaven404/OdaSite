@@ -94,6 +94,7 @@ export default {}
 .icon {
   font-size: 30px;
   margin-right: 50px;
+  width: 80px;
 }
 .location-container {
   display: flex;
@@ -151,6 +152,7 @@ export default {}
     align-items: center;
     padding: 10px 20px;
     color: orange;
+    font-weight: 600;
     background-color: white;
     border-radius: 5px;
     min-width: 250px;
@@ -158,7 +160,7 @@ export default {}
       padding: 10px 5px;
     }
     @media (max-width: 820px) {
-      min-width: 200px;
+      min-width: 220px;
     }
   }
 }
