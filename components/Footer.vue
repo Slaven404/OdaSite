@@ -140,7 +140,7 @@ export default {}
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: radial-gradient(transparent, transparent, black, black),
+  background: radial-gradient(transparent, black),
     url(/_nuxt/assets/images/freedownload/wood2.jpg);
 
   @media (max-width: 660px) {

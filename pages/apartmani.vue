@@ -2,7 +2,10 @@
   <div class="container">
     <div class="container-apartmani">
       <div class="section">Izdavanje apartaman</div>
-      <div class="title">Apartmani "Strom"</div>
+      <div class="title title-logo">
+        <img src="@/assets/images/carli-logo.png" alt="" />
+        <div style="padding-bottom: 5px">Apartmani "Čarli"</div>
+      </div>
       <div class="description">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -40,6 +43,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title-logo {
+  display: flex;
+  align-items: flex-end;
+  img {
+    height: 80px;
+  }
+}
 .container-location,
 .container-apartmani {
   background: rgba(125, 125, 125, 0.2);

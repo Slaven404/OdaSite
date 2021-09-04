@@ -7,15 +7,14 @@
             width="1400"
             height="700"
             id="gmap_canvas"
-            src="https://maps.google.com/maps?q=zlatibor&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.3591552324826!2d19.690565602253066!3d43.72723558392807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47582ff55912f42f%3A0xb16d87d45a7670fa!2sRujanska%2C%20Zlatibor%2C%20Serbia!5e0!3m2!1sen!2sus!4v1630780536176!5m2!1sen!2sus"
             frameborder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0"
           ></iframe>
 
-          <!-- <a href="https://123movies-to.org"></a><br />
-          ><a href="https://www.embedgooglemap.net">embed map html</a> -->
+          <!-- src="https://maps.google.com/maps?q=zlatibor&t=&z=13&ie=UTF8&iwloc=&output=embed" -->
         </div>
       </div>
     </div>

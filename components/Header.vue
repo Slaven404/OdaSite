@@ -99,6 +99,7 @@ export default {
     text-decoration: none;
     &:hover {
       border-bottom: 2px solid white;
+      transform: scale(1.1);
     }
     @media (max-width: 1100px) {
       margin: 10px;

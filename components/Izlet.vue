@@ -15,12 +15,7 @@
               <div class="left" @click="prew">
                 <font-awesome-icon class="icon" icon="chevron-left" />
               </div>
-              <img
-                :key="imgIndex"
-                class="zoom-image"
-                :src="activeImage"
-                alt=""
-              />
+              <img :src="activeImage" alt="" />
               <div class="right" @click="next">
                 <font-awesome-icon class="icon" icon="chevron-right" />
               </div>
@@ -58,12 +53,7 @@
               <div class="left" @click="prew">
                 <font-awesome-icon class="icon" icon="chevron-left" />
               </div>
-              <img
-                :key="imgIndex"
-                class="zoom-image"
-                :src="activeImage"
-                alt=""
-              />
+              <img :src="activeImage" alt="" />
               <div class="right" @click="next">
                 <font-awesome-icon class="icon" icon="chevron-right" />
               </div>
@@ -133,9 +123,10 @@ export default {
 
 <style lang="scss" scoped>
 .decription-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 50px;
+  text-align: center;
 }
 .star-icon {
   color: #ffd700;
@@ -164,9 +155,13 @@ export default {
     }
   }
   .description > div {
-    padding: 0 180px 0 50px !important;
+    // padding: 0 180px 0 50px !important;
+    padding-left: 50px !important;
+    padding-right: 30% !important;
     @media (max-width: 920px) {
-      padding: 0 180px 0 30px !important;
+      padding-left: 30px !important;
+
+      // padding: 0 180px 0 30px !important;
     }
     @media (max-width: 660px) {
       padding: 0 30px !important;
@@ -333,9 +328,13 @@ export default {
   flex-direction: column;
 
   div {
-    padding: 0 50px 0 180px;
+    // padding: 0 50px 0 180px;
+    padding-right: 50px;
+    padding-left: 30% !important;
     @media (max-width: 920px) {
-      padding: 0 30px 0 180px;
+      padding-right: 30px;
+
+      // padding: 0 30px 0 180px;
     }
     @media (max-width: 660px) {
       padding: 0 30px !important;

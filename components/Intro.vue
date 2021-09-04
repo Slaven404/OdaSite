@@ -81,6 +81,7 @@ export default {
     .intro-content,
     .intro-title,
     .intro-adress {
+      font-weight: 600;
       animation-name: bgBlur;
       animation-timing-function: ease-in-out;
       animation-duration: 0.33s;

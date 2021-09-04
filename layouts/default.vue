@@ -42,25 +42,30 @@ body {
 .section {
   font-size: 22px;
   letter-spacing: 2px;
-  color: orange;
-  font-weight: 500;
+  color: #8ce203;
+  font-weight: 600;
   padding: 10px 50px;
   background: rgba(125, 125, 125, 0.4);
   max-width: 1300px;
   width: calc(100% - 100px);
   margin: auto;
   margin-top: 30px;
+  text-shadow: 2px 1px #101010;
 }
 .description {
+  font-size: 18px;
   padding: 20px 50px;
   text-align: justify;
+  @media (max-width: 1100px) {
+  }
   @media (max-width: 920px) {
     padding: 20px;
+    font-size: 17px;
   }
 }
 .title {
   color: black;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   padding: 20px 50px;
   @media (max-width: 660px) {
