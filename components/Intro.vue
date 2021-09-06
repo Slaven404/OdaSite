@@ -16,7 +16,7 @@
     <div class="right" @click="next">
       <font-awesome-icon class="icon" icon="chevron-right" />
     </div>
-    <div :key="imgIndex" class="bg-image zoom-image">
+    <div class="bg-image zoom-image">
       <img :src="bgImage" alt="" />
     </div>
   </div>
@@ -64,7 +64,8 @@ export default {
   // width: calc(100vw - 100px);
   // max-width: 1020px;
   // max-width: 1200px;
-  height: 837px;
+  // height: 837px;
+  height: calc(100vh - 100px);
   margin-bottom: 50px !important;
   display: flex;
   margin: auto;
@@ -114,7 +115,8 @@ export default {
     width: 100%;
     position: absolute;
     object-fit: cover;
-    height: 837px;
+    // height: 837px;
+    height: calc(100vh - 100px);
   }
 }
 .intro-center {

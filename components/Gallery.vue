@@ -89,10 +89,17 @@ export default {
   background: rgba(0, 0, 0, 0.1);
 
   div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+
+    height: 20px;
+
     border: 2px solid rgba(0, 0, 0, 0);
 
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 5px;
     margin: 5px;
     color: white;
     border-radius: 50%;

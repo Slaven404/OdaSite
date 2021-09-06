@@ -42,7 +42,7 @@ body {
 .section {
   font-size: 22px;
   letter-spacing: 2px;
-  color: #8ce203;
+  color: #2abd06;
   font-weight: 600;
   padding: 10px 50px;
   background: rgba(125, 125, 125, 0.4);
