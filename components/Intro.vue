@@ -35,7 +35,6 @@ export default {
   computed: {
     bgImage() {
       return this.json[this.imgIndex].image
-      return `./SajtZlatibor/Agencija/${this.json[this.imgIndex].image}.jpg`
     },
   },
   methods: {

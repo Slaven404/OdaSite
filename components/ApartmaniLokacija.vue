@@ -7,35 +7,48 @@
         since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
       </div>
-      <div class="content">
-        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+      <!-- <div class="content">
         <div>
           <font-awesome-icon class="icon" icon="bus" />
         </div>
         <div class="short">Autobuska stanica 300 m</div>
-      </div>
-      <div class="content">
-        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+      </div> -->
+      <!-- <div class="content">
         <div>
           <font-awesome-icon class="icon" icon="shopping-cart" />
         </div>
         <div class="short">Tržni centar 150 m</div>
+      </div> -->
+      <div class="content">
+        <div>
+          <font-awesome-icon class="icon" icon="trophy" />
+        </div>
+        <div class="short">Adventure park 700 m</div>
       </div>
       <div class="content">
-        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+        <div>
+          <font-awesome-icon class="icon" icon="walking" />
+        </div>
+        <div class="short">Pješačka staza 700 m</div>
+      </div>
+      <div class="content">
         <div>
           <font-awesome-icon class="icon" icon="water" />
         </div>
-        <div class="short">Jezero 800 m</div>
+        <div class="short">Jezero 1000 m</div>
       </div>
       <div class="content">
-        <!-- <img src="@/assets/images/marker.png" alt="" /> -->
-
+        <div>
+          <font-awesome-icon class="icon rotate" icon="sync-alt" />
+        </div>
+        <div class="short">Kružni tok 700 m</div>
+      </div>
+      <!-- <div class="content">
         <div>
           <font-awesome-icon class="icon" icon="parking" />
         </div>
         <div class="short">Parking 1000 m</div>
-      </div>
+      </div> -->
     </div>
     <div class="map">
       <div class="mapouter">
@@ -112,6 +125,10 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+.rotate {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .icon {
   font-size: 30px;
   margin-right: 50px;

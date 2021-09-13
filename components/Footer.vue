@@ -2,37 +2,66 @@
   <div>
     <div class="footer-image">
       <!-- <img class="image" src="@/assets/images/footer.jpg" alt="" /> -->
-      <div class="icon-container">
-        <div class="icon">
-          <!-- <img src="@/assets/images/marker.png" alt="" /> -->
-          Adresa agencije
-          <div>
+      <div style="display: inline-block">
+        <div class="icon-container">
+          <div class="icon">
+            <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+            Adresa agencije
+            <div>
+              <font-awesome-icon
+                class="fa-icon icon-address"
+                icon="map-marked-alt"
+              />
+            </div>
+            <div class="podaci">
+              Turistička agencija Strom Zlatibor Rujanska bb
+            </div>
+          </div>
+          <div class="icon">
+            <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+            Broj telefona
+
+            <div>
+              <font-awesome-icon class="fa-icon icon-phone" icon="phone" />
+            </div>
+            <div class="podaci">064-126-2220</div>
+          </div>
+          <div class="icon">
+            <!-- <img src="@/assets/images/marker.png" alt="" /> -->
+            Email
+
+            <div>
+              <font-awesome-icon class="fa-icon icon-email" icon="envelope" />
+            </div>
+            <div class="podaci">
+              <a href="mailto:slavencbf@gmail.com">slavencbf@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="brands-icons">
+          <a
+            class="facebook-icon"
+            target="_black"
+            href="https://www.facebook.com/slavencbf"
+            aria-label="Facebook"
+          >
             <font-awesome-icon
-              class="fa-icon icon-address"
-              icon="map-marked-alt"
+              class="fab-icon icon-phone"
+              :icon="['fab', 'facebook']"
             />
-          </div>
-          <div class="podaci">
-            Turistička agencija Strom Zlatibor Rujanska bb
-          </div>
-        </div>
-        <div class="icon">
-          <!-- <img src="@/assets/images/marker.png" alt="" /> -->
-          Broj telefona
+          </a>
 
-          <div>
-            <font-awesome-icon class="fa-icon icon-phone" icon="phone" />
-          </div>
-          <div class="podaci">064-126-2220</div>
-        </div>
-        <div class="icon">
-          <!-- <img src="@/assets/images/marker.png" alt="" /> -->
-          Email
-
-          <div>
-            <font-awesome-icon class="fa-icon icon-email" icon="envelope" />
-          </div>
-          <div class="podaci">slavencbf@gmail.com</div>
+          <a
+            class="instagram-icon"
+            target="_black"
+            href="https://www.instagram.com/slaventucic/"
+            aria-label="Instagram"
+          >
+            <font-awesome-icon
+              class="fab-icon icon-email"
+              :icon="['fab', 'instagram']"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -57,10 +86,54 @@
 <script>
 export default {}
 </script>
-
 <style lang="scss" scoped>
+.brands-icons {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+.fab-icon {
+  font-size: 48px;
+}
+.facebook-icon {
+  border-radius: 50%;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  &:hover {
+    color: #4267b2;
+    background: radial-gradient(at center, white 23px, transparent 10px);
+  }
+}
+.instagram-icon {
+  border-radius: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  &:hover {
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    /* Also define standard property for compatibility */
+    -webkit-text-fill-color: transparent;
+  }
+}
 .podaci {
   height: 64px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 .fa-icon {
   font-size: 64px;
@@ -87,7 +160,8 @@ export default {}
 }
 .footer-image {
   background-image: url('@/assets/images/freedownload/wood5.jpg');
-
+  display: flex;
+  justify-content: center;
   background-size: cover;
   background-position-y: bottom;
   image {
