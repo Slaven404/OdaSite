@@ -1,5 +1,5 @@
 <template>
-  <div class="intro">
+  <div class="intro" @mouseover="addEvent" @mouseleave="removeEvent">
     <div class="left" @click="prew">
       <font-awesome-icon class="icon" icon="chevron-left" />
     </div>
@@ -67,15 +67,21 @@ export default {
         this.next()
       }, 10000)
     },
+    removeEvent() {
+      window.removeEventListener('keyup', this.arrowHanlder)
+    },
+    addEvent() {
+      window.addEventListener('keyup', this.arrowHanlder)
+    },
   },
 
   mounted() {
-    window.addEventListener('keyup', this.arrowHanlder)
+    this.addEvent()
     this.imagesTimer()
   },
   destroyed() {
     clearInterval(this.interval)
-    window.removeEventListener('keyup', this.arrowHanlder)
+    this.removeEvent()
   },
 }
 </script>
