@@ -6,9 +6,7 @@
     <div class="container-location">
       <div class="section">Lokacija apartmana</div>
 
-      <apartmani-lokacija
-        :text="'Apartman se nalazi u delu Zlatibora - naselje Potoci'"
-      />
+      <apartmani-lokacija :text="''" />
     </div>
     <div class="section">Organizovanje izleta</div>
     <izlet :images="mokra" :content="izleti.mokra" />
@@ -31,6 +29,11 @@ export default {
         './SajtZlatibor/mokraGora/mokra2.jpg',
         './SajtZlatibor/mokraGora/mokra3.jpg',
         './SajtZlatibor/mokraGora/mokra4.jpg',
+        './SajtZlatibor/mokraGora/mokra5.jpg',
+        './SajtZlatibor/mokraGora/mokra6.jpg',
+        './SajtZlatibor/mokraGora/mokra7.jpg',
+        './SajtZlatibor/mokraGora/mokra8.jpg',
+        './SajtZlatibor/mokraGora/mokra9.jpg',
       ],
       vranesaText: {
         title: 'Zlatarsko jezero, vidikovac Vraneša',

@@ -7,7 +7,9 @@
       <div class="intro-title">
         {{ json[imgIndex].title }}
       </div>
-      <div class="intro-adress"></div>
+      <div class="intro-adress">
+        {{ json[imgIndex].adress }}
+      </div>
 
       <div class="intro-content">
         {{ json[imgIndex].description }}
