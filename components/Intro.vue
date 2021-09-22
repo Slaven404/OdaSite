@@ -29,6 +29,7 @@ export default {
     return {
       imgIndex: 0,
       json: json,
+      interval: 0,
     }
   },
 
@@ -38,18 +39,43 @@ export default {
     },
   },
   methods: {
+    arrowHanlder(e) {
+      if (e.keyCode === 37) {
+        this.prew()
+      }
+      if (e.keyCode === 39) {
+        this.next()
+      }
+    },
     prew() {
       this.imgIndex--
       if (this.imgIndex < 0) {
         this.imgIndex = this.json.length - 1
       }
+      this.imagesTimer()
     },
     next() {
       this.imgIndex++
       if (this.imgIndex > this.json.length - 1) {
         this.imgIndex = 0
       }
+      this.imagesTimer()
     },
+    imagesTimer() {
+      clearInterval(this.interval)
+      this.interval = setInterval(() => {
+        this.next()
+      }, 10000)
+    },
+  },
+
+  mounted() {
+    window.addEventListener('keyup', this.arrowHanlder)
+    this.imagesTimer()
+  },
+  destroyed() {
+    clearInterval(this.interval)
+    window.removeEventListener('keyup', this.arrowHanlder)
   },
 }
 </script>
