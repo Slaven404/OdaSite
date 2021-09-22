@@ -39,13 +39,15 @@ body {
   // background: whitesmoke;
   background: transparent;
 }
+
 .section {
   font-size: 22px;
   letter-spacing: 2px;
   color: #2abd06;
   font-weight: 600;
   padding: 10px 50px;
-  background: rgba(125, 125, 125, 0.4);
+  //background: rgba(125, 125, 125, 0.4);
+  background: rgba(150, 111, 51, 0.9);
   max-width: 1300px;
   width: calc(100% - 100px);
   margin: auto;

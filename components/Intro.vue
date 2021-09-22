@@ -67,7 +67,6 @@ export default {
   height: calc(100vh - 100px);
   margin-bottom: 50px !important;
   display: flex;
-  margin: auto;
   justify-content: center;
   align-items: center;
   //   background-image: url('@/assets/images/footer.jpg');
@@ -122,7 +121,7 @@ export default {
   text-shadow: 2px 1px #000000;
   display: flex;
   z-index: 2;
-
+  width: 100%;
   flex-direction: column;
   justify-content: center;
 

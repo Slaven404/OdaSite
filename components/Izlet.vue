@@ -33,10 +33,7 @@
           {{ content.title }}
         </div>
         <div class="decription-content">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          {{ content.text }}
         </div>
       </div>
       <div v-if="right" class="image-container">
@@ -176,18 +173,20 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-width: 1400px;
   // max-width: 1200px;
-  padding: 0 50px;
   // background: whitesmoke;
   background: transparent;
   margin: 20px auto;
+  width: calc(100vw - 100px);
   @media (max-width: 1100px) {
     padding: 0 !important;
   }
 }
 .content {
   display: grid;
+  width: 100%;
   // grid-template-columns: 1fr 2fr;
   grid-template-columns: 1fr 1fr;
   @media (max-width: 660px) {

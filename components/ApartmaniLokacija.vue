@@ -2,10 +2,7 @@
   <div class="location-container">
     <div class="location">
       <div class="description" style="margin-bottom: 20px">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        {{ text }}
       </div>
       <!-- <div class="content">
         <div>
@@ -21,13 +18,13 @@
       </div> -->
       <div class="content">
         <div>
-          <font-awesome-icon class="icon" icon="trophy" />
+          <font-awesome-icon class="icon" icon="campground" />
         </div>
         <div class="short">Adventure park 700 m</div>
       </div>
       <div class="content">
         <div>
-          <font-awesome-icon class="icon" icon="walking" />
+          <font-awesome-icon class="icon" icon="hiking" />
         </div>
         <div class="short">Pješačka staza 700 m</div>
       </div>
@@ -58,7 +55,7 @@
               :width="mapWidth"
               :height="mapHeight"
               id="gmap_canvas"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.3591552324826!2d19.690565602253066!3d43.72723558392807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47582ff55912f42f%3A0xb16d87d45a7670fa!2sRujanska%2C%20Zlatibor%2C%20Serbia!5e0!3m2!1sen!2sus!4v1630780536176!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.0440867841116!2d19.717856420529554!3d43.73041099977893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDQzJzQ5LjEiTiAxOcKwNDMnMDkuNiJF!5e0!3m2!1sen!2sus!4v1631721430012!5m2!1sen!2sus"
               frameborder="0"
               scrolling="no"
               marginheight="0"
@@ -77,6 +74,12 @@
 
 <script>
 export default {
+  props: {
+    text: {
+      type: String,
+      default: '',
+    },
+  },
   computed: {
     mapWidth() {
       if (process.browser) {
@@ -139,6 +142,8 @@ export default {
   justify-content: center;
   align-items: flex-start;
   max-width: 1400px;
+  width: 100%;
+
   margin: auto;
   // background: whitesmoke;
   background: transparent;

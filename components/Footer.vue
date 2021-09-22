@@ -38,31 +38,6 @@
             </div>
           </div>
         </div>
-        <div class="brands-icons">
-          <a
-            class="facebook-icon"
-            target="_black"
-            href="https://www.facebook.com/slavencbf"
-            aria-label="Facebook"
-          >
-            <font-awesome-icon
-              class="fab-icon icon-phone"
-              :icon="['fab', 'facebook']"
-            />
-          </a>
-
-          <a
-            class="instagram-icon"
-            target="_black"
-            href="https://www.instagram.com/slaventucic/"
-            aria-label="Instagram"
-          >
-            <font-awesome-icon
-              class="fab-icon icon-email"
-              :icon="['fab', 'instagram']"
-            />
-          </a>
-        </div>
       </div>
     </div>
     <div class="footer-logo">
@@ -78,6 +53,31 @@
         <NuxtLink to="/apartmani">Apartmani</NuxtLink>
         <NuxtLink to="/izleti">Izleti</NuxtLink>
         <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+      </div>
+      <div class="brands-icons">
+        <a
+          class="facebook-icon"
+          target="_black"
+          href="https://www.facebook.com/slavencbf"
+          aria-label="Facebook"
+        >
+          <font-awesome-icon
+            class="fab-icon icon-phone"
+            :icon="['fab', 'facebook']"
+          />
+        </a>
+
+        <a
+          class="instagram-icon"
+          target="_black"
+          href="https://www.instagram.com/slaventucic/"
+          aria-label="Instagram"
+        >
+          <font-awesome-icon
+            class="fab-icon icon-email"
+            :icon="['fab', 'instagram']"
+          />
+        </a>
       </div>
     </div>
   </div>
@@ -217,7 +217,7 @@ export default {}
   background: radial-gradient(transparent, black, black),
     url('@/assets/images/freedownload/wood2.jpg');
 
-  @media (max-width: 660px) {
+  @media (max-width: 820px) {
     flex-direction: column;
   }
   div {

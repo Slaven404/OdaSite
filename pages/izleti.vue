@@ -1,11 +1,13 @@
 <template>
   <div class="izleti-container">
     <div class="section">Organizovanje izleta</div>
+    <izlet :images="mokra" :content="izleti.mokra" />
 
-    <izlet :images="sirogojno" :content="sirogojnoText" />
-    <izlet :right="true" :images="tara" :content="taraText" />
-    <izlet :images="vranesa" :content="vranesaText" />
-    <izlet :right="true" :images="andricgrad" :content="andricgradText" />
+    <izlet :right="true" :images="uvac" :content="izleti.uvac" />
+    <izlet :images="tara" :content="izleti.tara" />
+    <izlet :right="true" :images="vranesa" :content="izleti.vranesa" />
+    <izlet :images="andricgrad" :content="izleti.andricgrad" />
+    <izlet :right="true" :images="sirogojno" :content="izleti.sirogojno" />
 
     <div class="container-gallery">
       <div class="section gallery-section">Galerija</div>
@@ -16,23 +18,25 @@
 </template>
 
 <script>
+import izleti from '../static/texts/izleti.json'
 export default {
   data() {
     return {
-      sirogojnoText: {
-        title: 'Sirogojno - etno selo,  Stopića pećina, vodopad Gostilje',
-        text: '',
+      izleti: izleti,
+      uvackoText: {
+        title: 'Uvačko jezero',
+        text: 'Stanište beloglavnog supa, prekrasni meandri, ledena pećina, vidikovci',
       },
-      sirogojno: [
-        './SajtZlatibor/sirogojno/sirogojno1.jpg',
-        './SajtZlatibor/sirogojno/sirogojno2.jpg',
-        './SajtZlatibor/sirogojno/sirogojno3.jpg',
-        './SajtZlatibor/sirogojno/sirogojno4.jpg',
-        './SajtZlatibor/sirogojno/sirogojno5.jpg',
+      uvac: [
+        './SajtZlatibor/uvac/uvac1.jpg',
+        './SajtZlatibor/uvac/uvac2.jpg',
+        './SajtZlatibor/uvac/uvac3.jpg',
+        './SajtZlatibor/uvac/uvac4.jpg',
+        './SajtZlatibor/uvac/uvac5.jpg',
       ],
       taraText: {
         title: 'Tara, vidikovac Banjska stena',
-        text: '',
+        text: 'Tepih livada, Pančićeva omorika, edukacioni centar, Mitrovac',
       },
       tara: [
         './SajtZlatibor/tara/tara1.jpg',
@@ -43,7 +47,7 @@ export default {
       ],
       vranesaText: {
         title: 'Zlatarsko jezero, vidikovac Vraneša',
-        text: '',
+        text: 'Beloglavi sup',
       },
       vranesa: [
         './SajtZlatibor/vranesa/vranesa1.jpg',
@@ -52,7 +56,7 @@ export default {
         './SajtZlatibor/vranesa/vranesa4.jpg',
       ],
       andricgradText: {
-        title: 'Andrić grad Višegrad- Na Drini ćuprija - Uvacko jezero',
+        title: 'Andrić grad Višegrad - Na Drini ćuprija - Manastir dobrun',
         text: '',
       },
       andricgrad: [
@@ -65,12 +69,32 @@ export default {
         './SajtZlatibor/andricgrad/andricgrad7.jpg',
         './SajtZlatibor/andricgrad/andricgrad8.jpg',
       ],
+      sirogojnoText: {
+        title:
+          'Sirogojno: Stopića pećina, etno selo Sirogojno, vodopad u Gostilju',
+        text: '',
+      },
+      sirogojno: [
+        './SajtZlatibor/sirogojno/sirogojno1.jpg',
+        './SajtZlatibor/sirogojno/sirogojno2.jpg',
+        './SajtZlatibor/sirogojno/sirogojno3.jpg',
+        './SajtZlatibor/sirogojno/sirogojno4.jpg',
+        './SajtZlatibor/sirogojno/sirogojno5.jpg',
+      ],
+      mokra: [
+        './SajtZlatibor/mokraGora/mokra1.jpg',
+        './SajtZlatibor/mokraGora/mokra2.jpg',
+        './SajtZlatibor/mokraGora/mokra3.jpg',
+        './SajtZlatibor/mokraGora/mokra4.jpg',
+      ],
     }
   },
   computed: {
     images() {
       let imgs = []
       imgs.push(
+        ...this.mokra,
+        ...this.uvac,
         ...this.andricgrad,
         ...this.vranesa,
         ...this.tara,
@@ -92,7 +116,9 @@ export default {
 }
 .container-gallery {
   width: 100%;
-  background: rgba(125, 125, 125, 0.2);
+  // background: rgba(125, 125, 125, 0.2);
+  background: rgba(255, 252, 238, 0.4);
+
   max-width: 1400px;
   margin: auto;
   margin-top: 50px;

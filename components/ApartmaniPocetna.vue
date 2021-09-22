@@ -54,7 +54,8 @@ export default {}
   max-width: 1400px;
   margin: auto;
   // background: whitesmoke;
-  background: rgba(125, 125, 125, 0.2);
+  background: rgba(255, 252, 238, 0.4);
+  // background: rgba(125, 125, 125, 0.2);
   border-radius: 20px;
   padding-bottom: 50px;
 }

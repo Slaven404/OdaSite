@@ -6,28 +6,31 @@
     <div class="container-location">
       <div class="section">Lokacija apartmana</div>
 
-      <apartmani-lokacija />
+      <apartmani-lokacija
+        :text="'Apartman se nalazi u delu Zlatibora - naselje Potoci'"
+      />
     </div>
     <div class="section">Organizovanje izleta</div>
-    <izlet :images="tara" :content="taraText" />
-    <izlet :images="vranesa" :right="true" :content="vranesaText" />
+    <izlet :images="mokra" :content="izleti.mokra" />
+    <izlet :images="vranesa" :right="true" :content="izleti.vranesa" />
   </div>
 </template>
 
 <script>
+import izleti from '../static/texts/izleti.json'
 export default {
   data() {
     return {
+      izleti: izleti,
       taraText: {
         title: 'Tara, vidikovac Banjska stena',
         text: '',
       },
-      tara: [
-        './SajtZlatibor/tara/tara1.jpg',
-        './SajtZlatibor/tara/tara2.jpg',
-        './SajtZlatibor/tara/tara3.jpg',
-        './SajtZlatibor/tara/tara4.jpg',
-        './SajtZlatibor/tara/tara5.jpg',
+      mokra: [
+        './SajtZlatibor/mokraGora/mokra1.jpg',
+        './SajtZlatibor/mokraGora/mokra2.jpg',
+        './SajtZlatibor/mokraGora/mokra3.jpg',
+        './SajtZlatibor/mokraGora/mokra4.jpg',
       ],
       vranesaText: {
         title: 'Zlatarsko jezero, vidikovac Vraneša',
@@ -46,10 +49,15 @@ export default {
 
 <style lang="scss" scoped>
 .container-location {
-  background: rgba(125, 125, 125, 0.2);
+  background: rgba(255, 252, 238, 0.4);
+  // background: rgba(125, 125, 125, 0.2);
   max-width: 1400px;
   margin: auto;
   margin-top: 50px;
   border-radius: 20px;
+  width: 100%;
+}
+.index-class {
+  margin: auto;
 }
 </style>
