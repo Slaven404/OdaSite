@@ -10,7 +10,8 @@
           Lokacija apartmana je u delu <b> Zlatibora </b>- naselje
           <b> Potoci </b>. <br />
           Apartman se nalazi na <b>prvom spratu</b>. Kvadratura iznosi
-          <b>40m2</b>. Cena je <b>55000€</b>.
+          <b>40m<b class="stepen">2</b></b
+          >. Cena je <b>55000€</b>.
         </div>
       </div>
 
@@ -97,5 +98,9 @@ export default {
   @media (max-width: 740px) {
     font-size: 18px;
   }
+}
+.stepen {
+  font-size: 14px;
+  vertical-align: super;
 }
 </style>
