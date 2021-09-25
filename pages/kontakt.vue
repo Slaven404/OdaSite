@@ -105,5 +105,8 @@ export default {
   padding: 20px;
   display: flex;
   justify-content: center;
+  @media (max-width: 1100px) {
+    margin-top: 50px;
+  }
 }
 </style>
