@@ -14,6 +14,7 @@
       <NuxtLink to="/">Početna</NuxtLink>
 
       <NuxtLink to="/apartmani">Apartmani</NuxtLink>
+      <NuxtLink to="/nekretnine">Nekretnine</NuxtLink>
       <NuxtLink to="/izleti">Izleti</NuxtLink>
       <NuxtLink to="/kontakt">Kontakt</NuxtLink>
     </div>
@@ -67,6 +68,9 @@ export default {
   cursor: pointer;
   min-width: 80px;
   min-height: 48px;
+  @media (max-width: 820px) {
+    min-width: 60px;
+  }
 }
 .logo-img {
   width: 80px;
