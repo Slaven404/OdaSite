@@ -10,13 +10,15 @@
       </div>
       Turistička agencija "Strom"
     </div>
-    <div class="navigation">
-      <NuxtLink to="/">Početna</NuxtLink>
+    <div class="flow-auto">
+      <div class="navigation">
+        <NuxtLink to="/">Početna</NuxtLink>
 
-      <NuxtLink to="/apartmani">Apartmani</NuxtLink>
-      <NuxtLink to="/nekretnine">Nekretnine</NuxtLink>
-      <NuxtLink to="/izleti">Izleti</NuxtLink>
-      <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+        <NuxtLink to="/apartmani">Apartmani</NuxtLink>
+        <NuxtLink to="/nekretnine">Nekretnine</NuxtLink>
+        <NuxtLink to="/izleti">Izleti</NuxtLink>
+        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+      </div>
     </div>
   </div>
 </template>
@@ -49,7 +51,7 @@ export default {
   div {
     display: flex;
   }
-  @media (max-width: 820px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     .navigation {
       margin-left: auto;
@@ -94,7 +96,7 @@ export default {
   //min-width: 300px;
   align-items: center;
   padding: 10px;
-
+  font-size: 21px;
   a {
     color: white;
     margin: 20px;
@@ -105,10 +107,11 @@ export default {
       border-bottom: 2px solid white;
       transform: scale(1.1);
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1250px) {
       margin: 10px;
-      font-size: 20px;
+      font-size: 19px;
     }
+
     @media (max-width: 920px) {
       margin: 8px;
       font-size: 18px;
@@ -116,6 +119,34 @@ export default {
     @media (max-width: 820px) {
       margin: 6px;
     }
+    @media (max-width: 550px) {
+      font-size: 16px;
+    }
   }
+}
+.flow-auto {
+  overflow-x: auto;
+}
+
+.flow-auto::-webkit-scrollbar {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  height: 7px;
+  width: 7px;
+  scrollbar-width: thin;
+}
+.flow-auto::-webkit-scrollbar-track {
+  background-color: #303030;
+  // background-color: darkgrey;
+  border-radius: 10px;
+}
+.flow-auto::-webkit-scrollbar-thumb {
+  // background-color: rgb(148, 88, 54);
+
+  background: #919090;
+
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 </style>

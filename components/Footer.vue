@@ -49,8 +49,9 @@
         />
         <a href="/"> Turisticka agencija "Strom" </a>
       </div>
-      <div>
+      <div class="footer-menu">
         <NuxtLink to="/apartmani">Apartmani</NuxtLink>
+        <NuxtLink to="/nekretnine">Nekretnine</NuxtLink>
         <NuxtLink to="/izleti">Izleti</NuxtLink>
         <NuxtLink to="/kontakt">Kontakt</NuxtLink>
       </div>
@@ -230,6 +231,17 @@ export default {}
       margin: 20px;
       color: white;
       text-decoration: none;
+    }
+  }
+}
+.footer-menu {
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+    a {
+      width: 50%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      text-align: center;
     }
   }
 }

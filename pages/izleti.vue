@@ -1,6 +1,6 @@
 <template>
   <div class="izleti-container">
-    <div class="section">Organizovanje izleta</div>
+    <div class="section mt-50">Organizovanje izleta</div>
     <izlet :images="mokra" :content="izleti.mokra" />
 
     <izlet :right="true" :images="uvac" :content="izleti.uvac" />
@@ -130,5 +130,8 @@ export default {
   border-radius: 20px;
   margin-bottom: 50px;
   padding-bottom: 50px;
+}
+.mt-50 {
+  margin-top: 50px;
 }
 </style>
