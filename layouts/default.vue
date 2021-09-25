@@ -57,7 +57,7 @@ body {
 .description {
   font-size: 18px;
   padding: 20px 50px;
-  text-align: justify;
+  // text-align: justify;
   @media (max-width: 1100px) {
   }
   @media (max-width: 920px) {
