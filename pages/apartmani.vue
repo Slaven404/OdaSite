@@ -3,13 +3,16 @@
     <div class="container-apartmani">
       <div class="section">Izdavanje apartmana</div>
       <div class="title title-logo">
-        <img src="@/assets/images/carli-logo.png" alt="" />
-        <div style="padding-bottom: 5px">Apartmani "Čarli"</div>
+        <img
+          src="@/assets/images/carli-logo.png"
+          alt="Bad connection or error loading image"
+        />
+        <div class="pb-5">Apartmani "Čarli"</div>
       </div>
       <div class="description">
         Apartman se nalazi u delu Zlatibora - naselje Potoci
       </div>
-      <gallery :images="images" style="margin-bottom: 50px" />
+      <gallery :images="images" class="mb-50" />
     </div>
 
     <div class="container-location">
@@ -40,6 +43,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mb-50 {
+  margin-bottom: 50px;
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
 .title-logo {
   display: flex;
   align-items: flex-end;
@@ -51,7 +60,6 @@ export default {
 .container-apartmani {
   background: rgba(255, 252, 238, 0.4);
 
-  // background: rgba(125, 125, 125, 0.2);
   max-width: 1400px;
   margin-top: 50px;
   border-radius: 20px;

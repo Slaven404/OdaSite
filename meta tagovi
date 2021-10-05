@@ -1,0 +1,198 @@
+[33mcommit e8d51ef7f249859e1985d6eacbe44144624c2948[m[33m ([m[1;36mHEAD -> [m[1;32mdev/master[m[33m)[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Tue Oct 5 23:03:43 2021 +0200
+
+    meta tagovi
+
+[33mcommit 114dd7d0baef9e693f13646b2f0563fd5e7a0b8b[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 25 21:35:26 2021 +0200
+
+    poravnanje teksta u izletima
+
+[33mcommit 391b6d6146bf7aa644a78dc70197c1f8d6e09271[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 25 21:18:30 2021 +0200
+
+    stepen za metar kvadratni ....
+
+[33mcommit f66883bffb3e121ab7cf92e5adcf024c2c35cb36[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 25 21:11:30 2021 +0200
+
+    margin top on map
+
+[33mcommit 97019ff04c42aa4211da700a7355bbfe6737761d[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 25 21:03:34 2021 +0200
+
+    ispravke za rezolucije
+
+[33mcommit 200ff7b6ed0a91d2dd45bd9089279d910fed65b8[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 25 20:25:58 2021 +0200
+
+    stranica NEKRETNINE
+
+[33mcommit 96c7862244dedb00a11c06b31faf2349a74379e8[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Sep 23 00:06:00 2021 +0200
+
+    update -- tekst
+
+[33mcommit 9671a47741f5e24ac086b2692873294fb88e124f[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Wed Sep 22 23:10:59 2021 +0200
+
+    Update - Listanje slika na strelice
+
+[33mcommit 1caa8fed20903cc8dface4252d0a76f8d573bd0c[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Wed Sep 22 23:01:59 2021 +0200
+
+    Automatsko shaltanje slika, omoguceno shaltanje pomocu strelica
+
+[33mcommit d264daddb85f4153666afbb6461fa58bd85a8a18[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Wed Sep 22 22:45:47 2021 +0200
+
+    dodavanje sadrzaja
+
+[33mcommit 4fb569e0b13da977474bb87bd44567e7dbc275eb[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Mon Sep 13 08:48:38 2021 +0200
+
+    v2
+
+[33mcommit b3cbcea438e1236500eb1452399426b4583107f6[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Mon Sep 6 08:54:26 2021 +0200
+
+    pagination fix
+
+[33mcommit 9e6400066ae5ad38a45c855ef92abfccdde92bff[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sun Sep 5 11:51:02 2021 +0200
+
+    map w/h
+
+[33mcommit b377a640d171b5d6b64cda75a90d67edbc25ee86[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 4 21:17:11 2021 +0200
+
+    pozadina na izletima
+
+[33mcommit e58e0d6c302d45dc704be448583dbc730bcc6b9e[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 4 21:00:20 2021 +0200
+
+    ispravke
+
+[33mcommit 1c85bd9cb1ab0cfd9561e070987f3070092bcaac[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Sep 4 20:38:10 2021 +0200
+
+    update
+
+[33mcommit 2f71f43877000560d8836cea8b2a9915339c1620[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Sep 2 22:44:09 2021 +0200
+
+    intro padding
+
+[33mcommit a4919c4dd55141f39941b65c1cc3f7548687e205[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Sep 2 22:27:09 2021 +0200
+
+    content
+
+[33mcommit ebbe31b72efa55eb3219fea8e61a803aa0cae3c4[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Sep 2 22:01:43 2021 +0200
+
+    animacije
+
+[33mcommit 799be5d0d85368e90754f58e566319cfc472de18[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Sep 2 21:46:40 2021 +0200
+
+    update
+
+[33mcommit 0e5b6e3deec3dd403c42e4d6a2d2ce40ec06d8da[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Sep 2 16:17:41 2021 +0200
+
+    gallery
+
+[33mcommit 5974a29882022df448775b9ec0daa72d3e617502[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Wed Sep 1 22:38:02 2021 +0200
+
+    update
+
+[33mcommit c3de6048ae01dc8449ef769ff41ed05bc219dc56[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Wed Sep 1 16:33:02 2021 +0200
+
+    update
+
+[33mcommit 10d7d5465b4aa85c1631e16e051dd32cc15dcba6[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Tue Aug 31 18:26:48 2021 +0200
+
+    icons
+
+[33mcommit ce2e0a5e83496c83e895253aec4548786fea7318[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Aug 19 19:12:12 2021 +0200
+
+    cleanup
+
+[33mcommit aea3c2f9e0c2d49837def8cc9dde4210a032f9b4[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Mon Aug 9 23:34:22 2021 +0200
+
+    rezolucije
+
+[33mcommit 9c276b7771b8eab465078c3bb7261c7a15c0cb98[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Mon Aug 9 23:32:32 2021 +0200
+
+    rezolucije
+
+[33mcommit 072f097bbe73113e8b994e2c6fa4371bcc5aad97[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sun Aug 8 23:36:06 2021 +0200
+
+    animacije
+
+[33mcommit 0eab06334a2178f62e1ebe090a41c2121cacfd12[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sun Aug 8 21:22:05 2021 +0200
+
+    drag to scroll
+
+[33mcommit 4c8f30983e3bb12a9ad90917d65083ef8ec3011d[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Thu Jul 29 23:13:57 2021 +0200
+
+    header footer, pola pocetne
+
+[33mcommit 7df9c82d9afc2bfc8fd8ed59f55af257c0abea47[m
+Merge: 390e408 cf062e9
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Jul 10 11:58:24 2021 +0200
+
+    merge readme
+
+[33mcommit 390e4080b0c8af75bb4bebcb96b4cc345287f13f[m
+Author: Slaven <slaven.cvi@hotmail.com>
+Date:   Sat Jul 10 11:53:18 2021 +0200
+
+    setup
+
+[33mcommit cf062e95cbc708393890137b789ea77a2a637a1b[m
+Author: Slaven404 <68074170+Slaven404@users.noreply.github.com>
+Date:   Sat Jul 10 10:30:34 2021 +0200
+
+    Initial commit

@@ -1,7 +1,7 @@
 <template>
   <div class="location-container">
     <div class="location">
-      <div class="description" style="margin-bottom: 20px">
+      <div class="description mb-20">
         {{ text }}
       </div>
       <!-- <div class="content">
@@ -66,10 +66,6 @@
       </div>
     </div>
   </div>
-  <!-- src="https://maps.google.com/maps?q=rujanska&t=&z=14&ie=UTF8&iwloc=&output=embed" -->
-
-  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.3591552324826!2d19.690565602253066!3d43.72723558392807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47582ff55912f42f%3A0xb16d87d45a7670fa!2sRujanska%2C%20Zlatibor%2C%20Serbia!5e0!3m2!1sen!2sus!4v1630780536176!5m2!1sen!2sus"
- width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 </template>
 
 <script>
@@ -128,6 +124,9 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+.mb-20 {
+  margin-bottom: 20px;
+}
 .rotate {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -145,9 +144,7 @@ export default {
   width: 100%;
 
   margin: auto;
-  // background: whitesmoke;
   background: transparent;
-  // background: rgba(125, 125, 125, 0.2);
   @media (max-width: 660px) {
     flex-direction: column;
     .location {
@@ -160,17 +157,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
-// .section {
-//   font-size: 18px;
-//   letter-spacing: 2px;
-//   color: orange;
-//   font-weight: 500;
-//   padding: 10px 50px;
-// }
-// .description {
-//   padding: 20px 50px;
-//   text-align: justify;
-// }
+
 .content {
   display: flex;
   justify-content: center;

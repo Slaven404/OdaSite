@@ -121,7 +121,6 @@ export default {
 }
 .container-gallery {
   width: 100%;
-  // background: rgba(125, 125, 125, 0.2);
   background: rgba(255, 252, 238, 0.4);
 
   max-width: 1400px;

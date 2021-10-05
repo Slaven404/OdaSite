@@ -1,11 +1,9 @@
 <template>
   <div>
     <div class="footer-image">
-      <!-- <img class="image" src="@/assets/images/footer.jpg" alt="" /> -->
-      <div style="display: inline-block">
+      <div class="d-inline-b">
         <div class="icon-container">
           <div class="icon">
-            <!-- <img src="@/assets/images/marker.png" alt="" /> -->
             Adresa agencije
             <div>
               <font-awesome-icon
@@ -18,7 +16,6 @@
             </div>
           </div>
           <div class="icon">
-            <!-- <img src="@/assets/images/marker.png" alt="" /> -->
             Broj telefona
 
             <div>
@@ -27,7 +24,6 @@
             <div class="podaci">064-126-2220</div>
           </div>
           <div class="icon">
-            <!-- <img src="@/assets/images/marker.png" alt="" /> -->
             Email
 
             <div>
@@ -43,9 +39,9 @@
     <div class="footer-logo">
       <div>
         <img
-          style="width: 80px"
+          class="w-80p"
           src="@/assets/images/strom-zlatibor-logo.png"
-          alt=""
+          alt="Bad connection or error loading image"
         />
         <a href="/"> Turisticka agencija "Strom" </a>
       </div>
@@ -88,6 +84,12 @@
 export default {}
 </script>
 <style lang="scss" scoped>
+.w-80p {
+  width: 80px;
+}
+.d-inline-b {
+  display: inline-block;
+}
 .brands-icons {
   display: flex;
   justify-content: flex-end;
@@ -150,15 +152,7 @@ export default {}
     font-size: 32px;
   }
 }
-.icon-address {
-  // color: blue;
-}
-.icon-phone {
-  // color: orange;
-}
-.icon-email {
-  // color: cyan;
-}
+
 .footer-image {
   background-image: url('@/assets/images/freedownload/wood5.jpg');
   display: flex;
@@ -189,7 +183,6 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin: 50px;
   color: white;
   font-weight: 500;
   font-size: 22px;

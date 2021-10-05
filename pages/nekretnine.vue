@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <gallery :images="images" style="margin-bottom: 50px" />
+      <gallery :images="images" class="mb-50" />
       <div class="ž font-19">
         Ukoliko kupujete ili prodajete apartman, kuću ili plac na Zlatiboru,
         Tari, Mokroj gori, Užicu i okolini možete nam se obratite na mail
@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mb-50 {
+  margin-bottom: 50px;
+}
 .title-logo {
   display: flex;
   align-items: flex-end;
@@ -57,7 +60,6 @@ export default {
 .container-apartmani {
   background: rgba(255, 252, 238, 0.4);
 
-  // background: rgba(125, 125, 125, 0.2);
   max-width: 1400px;
   margin-top: 50px;
   border-radius: 20px;

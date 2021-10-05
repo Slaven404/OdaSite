@@ -35,8 +35,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  // max-width: 1200px;
-  // background: whitesmoke;
   background: transparent;
 }
 
@@ -46,7 +44,6 @@ body {
   color: #2abd06;
   font-weight: 600;
   padding: 10px 50px;
-  //background: rgba(125, 125, 125, 0.4);
   background: rgba(150, 111, 51, 0.9);
   max-width: 1300px;
   width: calc(100% - 100px);
@@ -57,7 +54,6 @@ body {
 .description {
   font-size: 18px;
   padding: 20px 50px;
-  // text-align: justify;
   @media (max-width: 1100px) {
   }
   @media (max-width: 920px) {

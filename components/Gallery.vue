@@ -2,16 +2,32 @@
   <div>
     <div :key="offset" class="images-container fade-in-image">
       <div class="main">
-        <img @click="index = 0 + offset" :src="images[0 + offset]" alt="" />
+        <img
+          @click="index = 0 + offset"
+          :src="images[0 + offset]"
+          alt="Bad connection or error loading image"
+        />
       </div>
       <div v-if="images[1 + offset]" class="left">
-        <img @click="index = 1 + offset" :src="images[1 + offset]" alt="" />
+        <img
+          @click="index = 1 + offset"
+          :src="images[1 + offset]"
+          alt="Bad connection or error loading image"
+        />
       </div>
       <div v-if="images[2 + offset]" class="right">
-        <img @click="index = 2 + offset" :src="images[2 + offset]" alt="" />
+        <img
+          @click="index = 2 + offset"
+          :src="images[2 + offset]"
+          alt="Bad connection or error loading image"
+        />
       </div>
       <div v-if="images[3 + offset]" class="bottom">
-        <img @click="index = 3 + offset" :src="images[3 + offset]" alt="" />
+        <img
+          @click="index = 3 + offset"
+          :src="images[3 + offset]"
+          alt="Bad connection or error loading image"
+        />
       </div>
     </div>
     <div class="pagination" v-if="images.length > 4">

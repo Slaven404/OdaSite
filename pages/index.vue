@@ -53,7 +53,6 @@ export default {
 <style lang="scss" scoped>
 .container-location {
   background: rgba(255, 252, 238, 0.4);
-  // background: rgba(125, 125, 125, 0.2);
   max-width: 1400px;
   margin: auto;
   margin-top: 50px;

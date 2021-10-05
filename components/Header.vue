@@ -44,7 +44,6 @@ export default {
   background-color: black;
   color: white;
   font-size: 22px;
-  // padding: 0 40px;
   padding-right: 0px;
   min-height: 100px;
   background-image: url('@/assets/images/freedownload/wood2.jpg');
@@ -93,7 +92,6 @@ export default {
   }
 }
 .navigation {
-  //min-width: 300px;
   align-items: center;
   padding: 10px;
   font-size: 21px;
@@ -138,12 +136,9 @@ export default {
 }
 .flow-auto::-webkit-scrollbar-track {
   background-color: #303030;
-  // background-color: darkgrey;
   border-radius: 10px;
 }
 .flow-auto::-webkit-scrollbar-thumb {
-  // background-color: rgb(148, 88, 54);
-
   background: #919090;
 
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

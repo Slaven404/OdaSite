@@ -19,7 +19,7 @@
       <font-awesome-icon class="icon" icon="chevron-right" />
     </div>
     <div class="bg-image zoom-image">
-      <img :src="bgImage" alt="" />
+      <img :src="bgImage" alt="Bad connection or error loading image" />
     </div>
   </div>
 </template>
@@ -94,16 +94,12 @@ export default {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  // width: calc(100vw - 100px);
-  // max-width: 1020px;
-  // max-width: 1200px;
-  // height: 837px;
+
   height: calc(100vh - 100px);
   margin-bottom: 50px !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  //   background-image: url('@/assets/images/footer.jpg');
   background-position: bottom;
   color: white;
   position: relative;
@@ -138,16 +134,11 @@ export default {
   left: 0;
   z-index: 1;
   position: absolute;
-  // max-width: 1200px;
   width: 100%;
   img {
-    // width: calc(100vw - 100px);
-    // max-width: 1020px;
-    // max-width: 1200px;
     width: 100%;
     position: absolute;
     object-fit: cover;
-    // height: 837px;
     height: calc(100vh - 100px);
   }
 }
@@ -199,8 +190,6 @@ export default {
 .right {
   z-index: 2;
   text-shadow: 2px 1px #000000;
-  // background-color: #00000020;
-
   height: 100%;
   display: flex;
   align-items: center;
