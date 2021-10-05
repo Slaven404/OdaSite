@@ -8,7 +8,7 @@
           alt=""
         />
       </div>
-      Turistička agencija "Strom"
+      <h1 class="header-title">Turistička agencija "Strom"</h1>
     </div>
     <div class="flow-auto">
       <div class="navigation">
