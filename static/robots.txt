@@ -1,0 +1,4 @@
+Sitemap: https://www.zlatiborstrom.com/sitemap.xml
+User-Agent: *
+Allow: /
+

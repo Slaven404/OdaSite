@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Turisticka Agencija Strom - Zlatibor',
+    title: 'Strom - Turisticka Agencija | Zlatibor',
     htmlAttrs: {
       lang: 'en',
     },
@@ -17,7 +17,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Agencija Strom - Zlatibor',
+        content: 'Strom - Turisticka Agencija | Zlatibor',
       },
       {
         hid: 'og:description',
@@ -69,8 +69,12 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'nuxt-fontawesome',
+    '@nuxtjs/google-analytics',
   ],
 
+  googleAnalytics: {
+    id: 'G-VET9W14STR',
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

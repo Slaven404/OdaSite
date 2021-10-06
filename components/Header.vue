@@ -5,7 +5,7 @@
         <img
           class="logo-img"
           src="@/assets/images/strom-zlatibor-logo.png"
-          alt=""
+          alt="S"
         />
       </div>
       <h1 class="header-title">Turistička agencija "Strom"</h1>

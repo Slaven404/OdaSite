@@ -19,6 +19,9 @@ export default {
       ],
     }
   },
+  mounted() {
+    this.$ga.page(this.$route.path)
+  },
 }
 </script>
 
