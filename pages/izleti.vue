@@ -9,6 +9,34 @@
     <izlet :images="andricgrad" :content="izleti.andricgrad" />
     <izlet :right="true" :images="sirogojno" :content="izleti.sirogojno" />
 
+    <div class="yt-container">
+      <div class="yt-video">
+        <client-only>
+          <iframe
+            :width="ytWidth"
+            :height="ytHeight"
+            src="https://www.youtube.com/embed/L45nc3utvek"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </client-only>
+      </div>
+      <div class="yt-video">
+        <client-only>
+          <iframe
+            :width="ytWidth"
+            :height="ytHeight"
+            src="https://www.youtube.com/embed/BnodTPnaSPo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </client-only>
+      </div>
+    </div>
     <div class="container-gallery">
       <div class="section gallery-section">Galerija</div>
 
@@ -109,6 +137,32 @@ export default {
 
       return imgs
     },
+    ytWidth() {
+      if (process.browser) {
+        if (window.innerWidth <= 480) {
+          return '302'
+        }
+        if (window.innerWidth <= 660) {
+          return '448'
+        }
+
+        return '560'
+      }
+      return '560'
+    },
+    ytHeight() {
+      if (process.browser) {
+        if (window.innerWidth <= 480) {
+          return '170'
+        }
+        if (window.innerWidth <= 660) {
+          return '252'
+        }
+
+        return '315'
+      }
+      return '315'
+    },
   },
 }
 </script>
@@ -131,7 +185,26 @@ export default {
   margin-bottom: 50px;
   padding-bottom: 50px;
 }
-.mt-50 {
-  // margin-top: 50px;
+.yt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  width: calc(100vw - 100px);
+  margin: 20px auto;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+  @media (max-width: 660px) {
+    width: 100vw;
+  }
+  div {
+    display: flex;
+    margin: auto;
+    @media (max-width: 1100px) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
 }
 </style>
