@@ -135,6 +135,9 @@ export default {
   font-size: 30px;
   margin-right: 50px;
   width: 80px;
+  @media (max-width: 500px) {
+    width: 35px;
+  }
 }
 .location-container {
   display: flex;

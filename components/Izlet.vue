@@ -89,13 +89,29 @@ export default {
       if (this.imgIndex < 0) {
         this.imgIndex = this.images.length - 1
       }
+      this.preloadPrew()
     },
     next() {
       this.imgIndex++
       if (this.imgIndex > this.images.length - 1) {
         this.imgIndex = 0
       }
+      this.preloadNext()
     },
+    preloadNext() {
+      let img = new Image()
+      if (this.imgIndex < this.images.length - 1)
+        img.src = this.images[this.imgIndex + 1]
+    },
+    preloadPrew() {
+      let img = new Image()
+      if (this.imgIndex > 0) img.src = this.images[this.imgIndex - 1]
+    },
+  },
+  mounted() {
+    let img = new Image()
+    img.src = this.images[this.imgIndex + 1]
+    img.src = this.images[this.images.length - 1]
   },
 }
 </script>

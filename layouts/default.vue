@@ -39,6 +39,15 @@ body {
   justify-content: center;
   margin: auto;
   background: transparent;
+  @media (max-width: 1100px) {
+    padding-top: 155px;
+  }
+  @media (max-width: 450px) {
+    padding-top: 165px;
+  }
+  @media (max-width: 330px) {
+    padding-top: 185px;
+  }
 }
 
 .section {

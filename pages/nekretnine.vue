@@ -75,7 +75,7 @@ export default {
   font-size: 36px;
   font-weight: 600;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 5px;
   color: rgb(111, 70, 6);
   text-shadow: 1px 1px black;

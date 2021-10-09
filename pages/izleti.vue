@@ -19,6 +19,7 @@
 
 <script>
 import izleti from '../static/texts/izleti.json'
+
 export default {
   data() {
     return {
@@ -131,6 +132,6 @@ export default {
   padding-bottom: 50px;
 }
 .mt-50 {
-  margin-top: 50px;
+  // margin-top: 50px;
 }
 </style>

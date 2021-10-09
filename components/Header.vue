@@ -45,13 +45,15 @@ export default {
   color: white;
   font-size: 22px;
   padding-right: 0px;
-  min-height: 100px;
+  height: 100px !important;
   background-image: url('@/assets/images/freedownload/wood2.jpg');
   div {
     display: flex;
   }
   @media (max-width: 1100px) {
     flex-direction: column;
+    height: 155px !important;
+
     .navigation {
       margin-left: auto;
       padding: 0;
@@ -59,6 +61,12 @@ export default {
     .title {
       padding: 0;
     }
+  }
+  @media (max-width: 450px) {
+    height: 165px !important;
+  }
+  @media (max-width: 330px) {
+    height: 185px !important;
   }
 }
 .logo {

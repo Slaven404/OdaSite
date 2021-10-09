@@ -55,6 +55,7 @@ export default {
         this.imgIndex = this.json.length - 1
       }
       this.imagesTimer()
+      this.preloadPrew()
     },
     next() {
       this.imgIndex++
@@ -62,7 +63,18 @@ export default {
         this.imgIndex = 0
       }
       this.imagesTimer()
+      this.preloadNext()
     },
+    preloadNext() {
+      let img = new Image()
+      if (this.imgIndex < this.json.length - 1)
+        img.src = this.json[this.imgIndex + 1].image
+    },
+    preloadPrew() {
+      let img = new Image()
+      if (this.imgIndex > 0) img.src = this.json[this.imgIndex - 1].image
+    },
+
     imagesTimer() {
       clearInterval(this.interval)
       this.interval = setInterval(() => {
@@ -78,6 +90,9 @@ export default {
   },
 
   mounted() {
+    let img = new Image()
+    img.src = this.json[this.imgIndex + 1].image
+    img.src = this.json[this.json.length - 1].image
     this.addEvent()
     this.imagesTimer()
   },

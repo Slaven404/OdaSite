@@ -61,7 +61,7 @@ export default {
   background: rgba(255, 252, 238, 0.4);
 
   max-width: 1400px;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 20px;
   margin-bottom: 50px;
 }
