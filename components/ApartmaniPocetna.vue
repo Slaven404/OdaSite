@@ -16,7 +16,7 @@
         class="slika"
         v-for="(i, key) in 14"
         :key="key"
-        :src="`/SajtZlatibor/Apartmani/apartman${i}.jpg`"
+        :src="`/SajtZlatibor/Apartmani/apartman${i - 1}.jpg`"
         alt="Bad connection or error loading image"
       />
     </div>

@@ -28,6 +28,7 @@ export default {
   data() {
     return {
       images: [
+        './SajtZlatibor/Apartmani/apartman0.jpg',
         './SajtZlatibor/Apartmani/apartman1.jpg',
         './SajtZlatibor/Apartmani/apartman2.jpg',
         './SajtZlatibor/Apartmani/apartman3.jpg',
@@ -41,7 +42,6 @@ export default {
         './SajtZlatibor/Apartmani/apartman11.jpg',
         './SajtZlatibor/Apartmani/apartman12.jpg',
         './SajtZlatibor/Apartmani/apartman13.jpg',
-        './SajtZlatibor/Apartmani/apartman14.jpg',
       ],
     }
   },
