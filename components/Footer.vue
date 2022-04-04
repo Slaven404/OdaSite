@@ -67,7 +67,7 @@
         <a
           class="instagram-icon"
           target="_black"
-          href="https://www.instagram.com/slaventucic/"
+          href="https://www.instagram.com/apartman_carli_zlatibor/"
           aria-label="Instagram"
         >
           <font-awesome-icon

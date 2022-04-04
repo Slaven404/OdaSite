@@ -36,6 +36,12 @@ export default {
         './SajtZlatibor/Apartmani/apartman6.jpg',
         './SajtZlatibor/Apartmani/apartman7.jpg',
         './SajtZlatibor/Apartmani/apartman8.jpg',
+        './SajtZlatibor/Apartmani/apartman9.jpg',
+        './SajtZlatibor/Apartmani/apartman10.jpg',
+        './SajtZlatibor/Apartmani/apartman11.jpg',
+        './SajtZlatibor/Apartmani/apartman12.jpg',
+        './SajtZlatibor/Apartmani/apartman13.jpg',
+        './SajtZlatibor/Apartmani/apartman14.jpg',
       ],
     }
   },

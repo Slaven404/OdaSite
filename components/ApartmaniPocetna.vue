@@ -14,9 +14,9 @@
     <div v-drag-me class="images">
       <img
         class="slika"
-        v-for="(i, key) in 8"
+        v-for="(i, key) in 14"
         :key="key"
-        :src="`./SajtZlatibor/Apartmani/apartman${i}.jpg`"
+        :src="`/SajtZlatibor/Apartmani/apartman${i}.jpg`"
         alt="Bad connection or error loading image"
       />
     </div>
