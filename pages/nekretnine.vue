@@ -11,7 +11,7 @@
           <b> Potoci </b>. <br />
           Apartman se nalazi na <b>prvom spratu</b>. Kvadratura iznosi
           <b>40m<b class="stepen">2</b></b
-          >. Cena je <b>55000€</b>.
+          >.
         </div>
       </div>
 
