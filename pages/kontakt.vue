@@ -8,11 +8,11 @@
               :width="mapWidth"
               :height="mapHeight"
               id="gmap_canvas"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11532.176347136447!2d19.711290372996793!3d43.73041099977893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDQzJzQ5LjEiTiAxOcKwNDMnMDkuNiJF!5e0!3m2!1sen!2sus!4v1631721377966!5m2!1sen!2sus"
               frameborder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6857.0034543549355!2d19.717478450252386!3d43.731019155044194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24dbc3e9da147b0c!2zNDPCsDQzJzQ5LjEiTiAxOcKwNDMnMTAuOSJF!5e0!3m2!1sbs!2sba!4v1652629373968!5m2!1sbs!2sba"
             ></iframe>
           </client-only>
         </div>
