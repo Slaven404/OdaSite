@@ -31,14 +31,16 @@ export default {
   data() {
     return {
       images: [
-        '/SajtZlatibor/Apartmani/apartman1.jpg',
-        '/SajtZlatibor/Apartmani/apartman2.jpg',
-        '/SajtZlatibor/Apartmani/apartman3.jpg',
-        '/SajtZlatibor/Apartmani/apartman4.jpg',
-        '/SajtZlatibor/Apartmani/apartman5.jpg',
-        '/SajtZlatibor/Apartmani/apartman6.jpg',
-        '/SajtZlatibor/Apartmani/apartman7.jpg',
-        '/SajtZlatibor/Apartmani/apartman8.jpg',
+        '/SajtZlatibor/newapartmani/a0.jpg',
+        '/SajtZlatibor/newapartmani/a1.jpg',
+        '/SajtZlatibor/newapartmani/a2.jpg',
+        '/SajtZlatibor/newapartmani/a3.jpg',
+        '/SajtZlatibor/newapartmani/a4.jpg',
+        '/SajtZlatibor/newapartmani/a5.jpg',
+        '/SajtZlatibor/newapartmani/a6.jpg',
+        '/SajtZlatibor/newapartmani/a7.jpg',
+        '/SajtZlatibor/newapartmani/a8.jpg',
+        '/SajtZlatibor/newapartmani/a9.jpg',
       ],
     }
   },
