@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import json from '../static/texts/intro.json'
+import json from '../static/SajtZlatibor/intro.json'
 export default {
   data() {
     return {
