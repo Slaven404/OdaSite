@@ -1,13 +1,15 @@
 <template>
   <div class="izleti-container">
     <div class="section mt-50">Organizovanje izleta</div>
-    <izlet :images="mokragora" :content="izleti.mokragora" />
+    <client-only>
+      <izlet :images="mokragora" :content="izleti.mokragora" />
 
-    <izlet :right="true" :images="uvac" :content="izleti.uvac" />
-    <izlet :images="tara" :content="izleti.tara" />
-    <izlet :right="true" :images="vranesa" :content="izleti.vranesa" />
-    <izlet :images="andricgrad" :content="izleti.andricgrad" />
-    <izlet :right="true" :images="sirogojno" :content="izleti.sirogojno" />
+      <izlet :right="true" :images="uvac" :content="izleti.uvac" />
+      <izlet :images="tara" :content="izleti.tara" />
+      <izlet :right="true" :images="vranesa" :content="izleti.vranesa" />
+      <izlet :images="andricgrad" :content="izleti.andricgrad" />
+      <izlet :right="true" :images="sirogojno" :content="izleti.sirogojno" />
+    </client-only>
 
     <div class="yt-container">
       <div class="yt-video">
