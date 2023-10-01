@@ -12,7 +12,7 @@
       <div class="description">
         Apartman se nalazi u delu Zlatibora - naselje Potoci
       </div>
-      <gallery :images="images" class="mb-50" />
+      <gallery :images="slike" class="mb-50" />
     </div>
 
     <div class="container-location">
@@ -24,22 +24,10 @@
 </template>
 
 <script>
+import apartmani from 'static/SajtZlatibor/apartmani/slike.json'
 export default {
-  data() {
-    return {
-      images: [
-        './SajtZlatibor/newapartmani/a0.jpg',
-        './SajtZlatibor/newapartmani/a1.jpg',
-        './SajtZlatibor/newapartmani/a2.jpg',
-        './SajtZlatibor/newapartmani/a3.jpg',
-        './SajtZlatibor/newapartmani/a4.jpg',
-        './SajtZlatibor/newapartmani/a5.jpg',
-        './SajtZlatibor/newapartmani/a6.jpg',
-        './SajtZlatibor/newapartmani/a7.jpg',
-        './SajtZlatibor/newapartmani/a8.jpg',
-        './SajtZlatibor/newapartmani/a9.jpg',
-      ],
-    }
+  computed: {
+    slike: () => apartmani,
   },
 }
 </script>

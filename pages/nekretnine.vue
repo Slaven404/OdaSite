@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <gallery :images="images" class="mb-50" />
+      <gallery :images="slike" class="mb-50" />
       <div class="ž font-19">
         Ukoliko kupujete ili prodajete apartman, kuću ili plac na Zlatiboru,
         Tari, Mokroj gori, Užicu i okolini možete nam se obratite na mail
@@ -27,22 +27,10 @@
 </template>
 
 <script>
+import apartmani from 'static/SajtZlatibor/apartmani/slike.json'
 export default {
-  data() {
-    return {
-      images: [
-        '/SajtZlatibor/newapartmani/a0.jpg',
-        '/SajtZlatibor/newapartmani/a1.jpg',
-        '/SajtZlatibor/newapartmani/a2.jpg',
-        '/SajtZlatibor/newapartmani/a3.jpg',
-        '/SajtZlatibor/newapartmani/a4.jpg',
-        '/SajtZlatibor/newapartmani/a5.jpg',
-        '/SajtZlatibor/newapartmani/a6.jpg',
-        '/SajtZlatibor/newapartmani/a7.jpg',
-        '/SajtZlatibor/newapartmani/a8.jpg',
-        '/SajtZlatibor/newapartmani/a9.jpg',
-      ],
-    }
+  computed: {
+    slike: () => apartmani,
   },
 }
 </script>

@@ -14,9 +14,9 @@
     <div v-drag-me class="images">
       <img
         class="slika"
-        v-for="(i, key) in 14"
+        v-for="(i, key) in slike"
         :key="key"
-        :src="`/SajtZlatibor/newapartmani/a${i - 1}.jpg`"
+        :src="i"
         alt="Bad connection or error loading image"
       />
     </div>
@@ -24,7 +24,12 @@
 </template>
 
 <script>
-export default {}
+import apartmani from 'static/SajtZlatibor/apartmani/slike.json'
+export default {
+  computed: {
+    slike: () => apartmani,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
