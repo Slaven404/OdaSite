@@ -27,10 +27,13 @@
 </template>
 
 <script>
-import apartmani from 'static/SajtZlatibor/apartmani/filepaths.json'
+import filepaths from 'static/SajtZlatibor/apartmani/filepaths.json'
 export default {
   computed: {
-    slike: () => apartmani,
+    slike: () =>
+      filepaths.useApartmaniForNekretnine
+        ? filepaths.apartmani
+        : filepaths.nekretnine,
   },
 }
 </script>
