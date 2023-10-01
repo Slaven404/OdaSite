@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import apartmani from 'static/SajtZlatibor/apartmani/slike.json'
+import apartmani from 'static/SajtZlatibor/apartmani/filepaths.json'
 export default {
   computed: {
     slike: () => apartmani,
