@@ -9,7 +9,7 @@
       <apartmani-lokacija :text="''" />
     </div>
     <div class="section">Organizovanje izleta</div>
-    <izlet :images="mokra" :content="izleti.mokra" />
+    <izlet :images="mokragora" :content="izleti.mokragora" />
     <izlet :images="vranesa" :right="true" :content="izleti.vranesa" />
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
     }
   },
   computed: {
-    mokra: () => filepaths.mokragora,
+    mokragora: () => filepaths.mokragora,
     vranesa: () => filepaths.vranesa,
   },
 }

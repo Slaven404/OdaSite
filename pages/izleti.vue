@@ -1,7 +1,7 @@
 <template>
   <div class="izleti-container">
     <div class="section mt-50">Organizovanje izleta</div>
-    <izlet :images="mokra" :content="izleti.mokra" />
+    <izlet :images="mokragora" :content="izleti.mokragora" />
 
     <izlet :right="true" :images="uvac" :content="izleti.uvac" />
     <izlet :images="tara" :content="izleti.tara" />
@@ -52,7 +52,7 @@ import filepaths from '../static/SajtZlatibor/izleti/filepaths.json'
 export default {
   computed: {
     izleti: () => izleti,
-    mokra: () => filepaths.mokragora,
+    mokragora: () => filepaths.mokragora,
     uvac: () => filepaths.uvac,
     andricgrad: () => filepaths.andricgrad,
     vranesa: () => filepaths.vranesa,
@@ -60,7 +60,7 @@ export default {
     sirogojno: () => filepaths.sirogojno,
     images() {
       const images = [
-        ...this.mokra,
+        ...this.mokragora,
         ...this.uvac,
         ...this.andricgrad,
         ...this.vranesa,
