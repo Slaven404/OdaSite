@@ -21,34 +21,39 @@ $ npm run generate
 
 ### 1) Apartmani i Nekretnine
 
-    Slike za apartmane je potrebno dodati u folder static/SajtZlatibor/apartmani/slike
+    Slike za apartmane je potrebno dodati u folder static/SajtZlatibor/apartmani/apartmani
     Putanje do slika je potrebno dodati u json fajl static/SajtZlatibor/apartmani/filepaths.json u niz "apartmani"
-    Za nekretnine se koriste iste slike kao i za apartmane.
-    Ukoliko bi trebalo zasebne slike da se koriste za nekretnine:
-        1. dodati slike u isti folder
-        2. dodati putanje do slike u niz "nekretnine"
-        3. postaviti vrijednost "useApartmaniForNekretnine" na false
+
+    Redosled zapisanih putanja predstavlja redosled prikaza slika
 
     Primjer:
-
     {
     "useApartmaniForNekretnine": true,
     "apartmani": [
-    "/SajtZlatibor/apartmani/slike/a0.jpg",
-    "/SajtZlatibor/apartmani/slike/a1.jpg",
-    "/SajtZlatibor/apartmani/slike/a2.jpg",
-    "/SajtZlatibor/apartmani/slike/a3.jpg",
-    "/SajtZlatibor/apartmani/slike/a4.jpg",
-    "/SajtZlatibor/apartmani/slike/a5.jpg",
-    "/SajtZlatibor/apartmani/slike/a6.jpg",
-    "/SajtZlatibor/apartmani/slike/a7.jpg",
-    "/SajtZlatibor/apartmani/slike/a8.jpg",
-    "/SajtZlatibor/apartmani/slike/a9.jpg"
+    "/SajtZlatibor/apartmani/apartmani/a0.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a1.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a2.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a3.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a4.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a5.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a6.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a7.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a8.jpg",
+    "/SajtZlatibor/apartmani/apartmani/a9.jpg"
     ],
      "nekretnine": []
     }
 
-### 2) Izleti
+### 2) Nekretnine
+
+    Slike za nekretnine je potrebno dodati u folder static/SajtZlatibor/apartmani/nekretnine
+    Putanje do slika je potrebno dodati u json fajl static/SajtZlatibor/apartmani/filepaths.json u niz "nekretnine"
+
+    Ukoliko je vrijednost "useApartmaniForNekretnine"  u filepath.json falju, nekretnine će koristiti slike sa apartmana
+
+    Redosled zapisanih putanja predstavlja redosled prikaza slika
+
+### 3) Izleti
 
     Slike izleta se nalaze u odgovarajućim folderima:
         static/SajtZlatibor/izleti/andricgrad
@@ -60,11 +65,15 @@ $ npm run generate
 
     Putanje do slika se nalaze u json fajlu: static/SajtZlatibor/izleti/filepaths.json
 
-### 3) Opisni tekstovi izleta
+    Redosled zapisanih putanja predstavlja redosled prikaza slika
+
+### 4) Opisni tekstovi izleta
 
     Opisni tekstovi izgleda se nalaze u fajlu static/SajtZlatibor/izleti/izleti.json
 
-### 4) Intro
+### 5) Intro
 
-    Tekstovi koji se pojavljuju na slideru na početnoj se nalaze u fajlu:
+    Objekti koji se pojavljuju na slideru na početnoj se nalaze u fajlu:
     static/SajtZlatibor/intro.json
+
+    Putanje do slika moraju biti ispravne -- "image" property

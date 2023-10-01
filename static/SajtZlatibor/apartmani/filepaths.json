@@ -1,16 +1,38 @@
 {
-  "useApartmaniForNekretnine": true,
+  "useApartmaniFormNekretnine": true,
   "apartmani": [
-    "/SajtZlatibor/apartmani/slike/a0.jpg",
-    "/SajtZlatibor/apartmani/slike/a1.jpg",
-    "/SajtZlatibor/apartmani/slike/a2.jpg",
-    "/SajtZlatibor/apartmani/slike/a3.jpg",
-    "/SajtZlatibor/apartmani/slike/a4.jpg",
-    "/SajtZlatibor/apartmani/slike/a5.jpg",
-    "/SajtZlatibor/apartmani/slike/a6.jpg",
-    "/SajtZlatibor/apartmani/slike/a7.jpg",
-    "/SajtZlatibor/apartmani/slike/a8.jpg",
-    "/SajtZlatibor/apartmani/slike/a9.jpg"
+    "/SajtZlatibor/apartmani/apartmani/a (1).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (2).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (3).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (4).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (5).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (6).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (7).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (8).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (9).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (10).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (11).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (12).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (13).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (14).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (15).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (16).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (17).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (18).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (19).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (20).jpg",
+    "/SajtZlatibor/apartmani/apartmani/a (21).jpg"
   ],
-  "nekretnine": []
+  "nekretnine": [
+    "/SajtZlatibor/apartmani/nekretnine/a0.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a1.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a2.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a3.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a4.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a5.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a6.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a7.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a8.jpg",
+    "/SajtZlatibor/apartmani/nekretnine/a9.jpg"
+  ]
 }
