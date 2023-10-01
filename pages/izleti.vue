@@ -46,23 +46,18 @@
 </template>
 
 <script>
-import izleti from '../static/texts/izleti.json'
-import uvac from '../static/SajtZlatibor/uvac/slike.json'
-import tara from '../static/SajtZlatibor/tara/slike.json'
-import vranesa from '../static/SajtZlatibor/vranesa/slike.json'
-import andricgrad from '../static/SajtZlatibor/andricgrad/slike.json'
-import sirogojno from '../static/SajtZlatibor/sirogojno/slike.json'
-import mokra from '../static/SajtZlatibor/mokraGora/slike.json'
+import izleti from '../static/SajtZlatibor/izleti//izleti.json'
+import filepaths from '../static/SajtZlatibor/izleti/filepaths.json'
 
 export default {
   computed: {
     izleti: () => izleti,
-    mokra: () => mokra,
-    uvac: () => uvac,
-    andricgrad: () => andricgrad,
-    vranesa: () => vranesa,
-    tara: () => tara,
-    sirogojno: () => sirogojno,
+    mokra: () => filepaths.mokragora,
+    uvac: () => filepaths.uvac,
+    andricgrad: () => filepaths.andricgrad,
+    vranesa: () => filepaths.vranesa,
+    tara: () => filepaths.tara,
+    sirogojno: () => filepaths.sirogojno,
     images() {
       const images = [
         ...this.mokra,

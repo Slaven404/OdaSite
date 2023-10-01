@@ -1,0 +1,51 @@
+{
+  "andricgrad": [
+    "./SajtZlatibor/andricgrad/slike/andricgrad1.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad2.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad3.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad4.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad5.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad6.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad7.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad8.jpg",
+    "./SajtZlatibor/andricgrad/slike/andricgrad9.jpg"
+  ],
+  "mokragora": [
+    "./SajtZlatibor/mokraGora/slike/mokra1.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra2.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra3.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra4.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra5.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra6.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra7.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra8.jpg",
+    "./SajtZlatibor/mokraGora/slike/mokra9.jpg"
+  ],
+  "sirogojno": [
+    "./SajtZlatibor/sirogojno/slike/sirogojno1.jpg",
+    "./SajtZlatibor/sirogojno/slike/sirogojno2.jpg",
+    "./SajtZlatibor/sirogojno/slike/sirogojno3.jpg",
+    "./SajtZlatibor/sirogojno/slike/sirogojno4.jpg",
+    "./SajtZlatibor/sirogojno/slike/sirogojno5.jpg"
+  ],
+  "tara": [
+    "./SajtZlatibor/tara/slike/tara1.jpg",
+    "./SajtZlatibor/tara/slike/tara2.jpg",
+    "./SajtZlatibor/tara/slike/tara3.jpg",
+    "./SajtZlatibor/tara/slike/tara4.jpg",
+    "./SajtZlatibor/tara/slike/tara5.jpg"
+  ],
+  "uvac": [
+    "./SajtZlatibor/uvac/slike/uvac1.jpg",
+    "./SajtZlatibor/uvac/slike/uvac2.jpg",
+    "./SajtZlatibor/uvac/slike/uvac3.jpg",
+    "./SajtZlatibor/uvac/slike/uvac4.jpg",
+    "./SajtZlatibor/uvac/slike/uvac5.jpg"
+  ],
+  "vranesa": [
+    "./SajtZlatibor/vranesa/slike/vranesa1.jpg",
+    "./SajtZlatibor/vranesa/slike/vranesa2.jpg",
+    "./SajtZlatibor/vranesa/slike/vranesa3.jpg",
+    "./SajtZlatibor/vranesa/slike/vranesa4.jpg"
+  ]
+}

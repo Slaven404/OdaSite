@@ -15,9 +15,8 @@
 </template>
 
 <script>
-import izleti from '../static/texts/izleti.json'
-import mokraGora from '../static/SajtZlatibor/mokraGora/slike.json'
-import vranesa from '../static/SajtZlatibor/vranesa/slike.json'
+import izleti from '../static/SajtZlatibor/izleti/izleti.json'
+import filepaths from '../static/SajtZlatibor/izleti/filepaths.json'
 export default {
   data() {
     return {
@@ -25,8 +24,8 @@ export default {
     }
   },
   computed: {
-    mokra: () => mokraGora,
-    vranesa: () => vranesa,
+    mokra: () => filepaths.mokragora,
+    vranesa: () => filepaths.vranesa,
   },
 }
 </script>
