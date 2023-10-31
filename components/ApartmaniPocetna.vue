@@ -9,7 +9,7 @@
       <div class="pb-5">Apartmani "Čarli"</div>
     </div>
     <div class="description">
-      Apartman se nalazi u delu Zlatibora - naselje Potoci
+      Apartman se nalazi u delu Zlatibora - naselje Vranjevina
     </div>
     <div v-drag-me class="images">
       <img

@@ -8,7 +8,7 @@
       <div class="apartman-description">
         <div class="description font-19">
           Lokacija apartmana je u delu <b> Zlatibora </b>- naselje
-          <b> Potoci </b>. <br />
+          <b> Vranjevina </b>. <br />
           Apartman se nalazi na <b>prvom spratu</b>. Kvadratura iznosi
           <b>40m<b class="stepen">2</b></b
           >.
